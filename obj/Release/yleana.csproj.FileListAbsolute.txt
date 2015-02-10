@@ -1,0 +1,7 @@
+D:\Code\YleanaApplication\yleana\bin\yleana.dll
+D:\Code\YleanaApplication\yleana\bin\yleana.pdb
+D:\Code\YleanaApplication\yleana\bin\EntityFramework.dll
+D:\Code\YleanaApplication\yleana\bin\EntityFramework.xml
+D:\Code\YleanaApplication\yleana\obj\Release\yleana.csprojResolveAssemblyReference.cache
+D:\Code\YleanaApplication\yleana\obj\Release\yleana.dll
+D:\Code\YleanaApplication\yleana\obj\Release\yleana.pdb

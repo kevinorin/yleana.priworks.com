@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="studentMaster.master.cs" Inherits="yleana.studentMaster" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="Telerik" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <style>
+        .button {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #666666;
+    cursor: pointer;
+    font-family: Georgia,Garamond,serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="content" style="margin:0 auto; width:1240px; height:auto; overflow-y:visible; overflow:visible; background-color:#DBEAF6;">
+        <div style="background-color:#FFFFFF">
+            <div id="logo" style="width:1200px; margin:0 auto; z-index:0; padding-bottom:35px; padding-top:40px; position:relative; text-align:left;">
+                <a href="/home.aspx"><img src="images/yleana_logo.png"/></a>
+            </div>
+            <div style="height:5px; background-color:#690A1C; width:1240px;"></div>
+        </div>
+        <table style="width: 1200px; margin: 0 auto; background-image: url(http://www.yleana.org/img/nav_bar_bg_slice.jpg); background-repeat: repeat-x; text-align: center;">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="button" value="Who We Are" onmouseover="" id="Who_We_Are_b" class="button"/>
+                    </td>
+                    <td>|</td>
+                    <td>
+                        <input type="button" value="SAT" onmouseover="" id="SAT_b" class="button"/>
+                    </td>
+                    <td>|</td>
+                    <td>
+                        <input type="button" value="Cutting Edge Leadership" onmouseover="" id="Cutting_Edge_Leadership_b" class="button"/>
+                    </td>
+                    <td>|</td>
+                    <td>
+                        <input type="button" value="College Preparedness" onmouseover="" id="College_Preparedness_b" class="button"/></td>
+                    <td>|</td>
+                    <td>
+                        <input type="button" value="Imagination Lectures" onmouseover="" id="Imagination_Lectures_b" class="button"/></td>
+                    <td>|</td>
+                    <td>
+                        <input type="button" value="2014" onmouseover="" id="2013_b" class="button"></td>
+                    <td>|</td>
+                    <td>
+                        <%--<input type="button" value="Contact Us" onmouseover="" onclick="Javascript: refresh_captcha_img();" id="Contact_Us_b" class="button"/>--%>
+                        <a href="/contactus.aspx" class="button">Contact Us</a>
+                    </td>
+                    <td>|</td>
+                    <% if (WebMatrix.WebData.WebSecurity.CurrentUserId <= 0) {  %>
+                    <td>
+                        <a href="/StudentRegistration.aspx" class="button">Apply</a></td>
+                    <td>|</td>                    
+                    <td>
+                        <a href="/Login.aspx" class="button">Login</a>
+                    </td>
+                    <td>|</td>
+                        <% } else { %>
+                    <td>
+                        <a href="/ChangePassword.aspx" class="button">Change Password</a></td>
+                    <td>|</td>
+                    <td>
+                        <a href="/Logout.aspx" class="button">Logout</a>
+                    </td>
+                    <td>|</td>
+                        <% } %>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+        <form id="form1" runat="server">
+            <telerik:RadScriptManager ID="RadScriptManager1" runat="server" />
+            <div style="min-height:250px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    <div style="width: 1240px; position: absolute;  text-align: center;" class="Splashsub">
+        <table class="button" style="margin: 0 auto; letter-spacing: 0.15em; word-spacing: 0.2em; font-size: 14px;">
+            <tbody>
+                <tr>
+                    <td>Copyright <%=DateTime.Today.Year %></td>
+                    <td>|</td>
+                    <td><a style="font-weight: normal; letter-spacing: 0.2em; font-size: 14px; color: #666666;" href="http://www.yleana.org" class="button">Yleana.org</a></td>
+                    <td>|</td>
+                    <td>All Rights Reserved</td>
+                    <td>|</td>
+                    <td>Design:&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

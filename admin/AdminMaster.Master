@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="YleanaAdmin.AdminMaster" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="Telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title>Yleana Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<%--<link href="css/layout.css" type="text/css" rel="stylesheet" />--%>
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="css/simple-sidebar.css" type="text/css" rel="stylesheet" />
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<telerik:RadScriptManager ID="RadScriptManager1" runat="server" />
+		<div id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<asp:Panel ID="pnlSideBar" runat="server">
+					<div id="rightsidebar" class="grid_rightmodules">
+						<!-- Begin Right Sidebar -->
+						<asp:Panel ID="pnlMenu" runat="server">
+							<div id="content" class="sidebarcontent">
+								<!-- Begin Content Wrap -->
+								<asp:Panel ID="pnlYleanaAdminMenu" runat="server">
+									<div class="sidebarblock" style="border-bottom: 1px solid #A9A9A9;">
+										General
+										<ul class="greenlist">	
+											<li style="margin-bottom: 7px; color: #333333 !important;">
+													<asp:HyperLink ID="lnkManageApplications" runat="server" Text="Manage Applications" NavigateUrl="~/ManageApplications.aspx">
+													</asp:HyperLink>
+												</li>																																																				
+										</ul>
+										<ul class="greenlist">	
+											<li style="margin-bottom: 7px; color: #333333 !important;">
+													<asp:HyperLink ID="lnkAddUser" runat="server" Text="Add User" NavigateUrl="~/AddUser.aspx">
+													</asp:HyperLink>
+												</li>																																																				
+										</ul>
+										<ul class="greenlist">	
+											<li style="margin-bottom: 7px; color: #333333 !important;">
+													<asp:HyperLink ID="lnkManageUser" runat="server" Text="Manage Users" NavigateUrl="~/ManageUser.aspx">
+													</asp:HyperLink>
+												</li>																																																				
+										</ul>
+									</div>
+								</asp:Panel>								
+								<asp:HyperLink ID="lnkChangePassword" runat="server" Text="Change Password" NavigateUrl="~/ChangePassword.aspx"></asp:HyperLink>
+								<asp:HyperLink ID="lnkLogOut" runat="server" Text="Log Out" NavigateUrl="~/LogOut.aspx"></asp:HyperLink>
+							</div>
+						</asp:Panel>
+					</div>
+				</asp:Panel>
+			</div>
+			<!-- Page content -->
+			<div id="page-content-wrapper">
+				<!-- Header -->
+				<div id="header">
+					<img src="images/yleana_logo.png" alt="includes/gloabel header content logo" style="height: 100%;" />
+				</div>
+
+				<%--	<div class="content-header">
+					<h1>
+						<a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+						
+					</h1>
+				</div>--%>
+				<!-- Keep all page content within the page-content inset div! -->
+				<div class="page-content inset">
+					<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+					</asp:ContentPlaceHolder>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

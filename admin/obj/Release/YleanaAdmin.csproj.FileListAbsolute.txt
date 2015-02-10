@@ -1,0 +1,5 @@
+D:\Code\YleanaAdmin\bin\YleanaAdmin.dll
+D:\Code\YleanaAdmin\bin\YleanaAdmin.pdb
+D:\Code\YleanaAdmin\obj\Release\YleanaAdmin.csprojResolveAssemblyReference.cache
+D:\Code\YleanaAdmin\obj\Release\YleanaAdmin.dll
+D:\Code\YleanaAdmin\obj\Release\YleanaAdmin.pdb

@@ -1,0 +1,11 @@
+E:\PriWorks\Yleana\YleanaAdmin\YleanaAdmin\bin\YleanaAdmin.dll
+E:\PriWorks\Yleana\YleanaAdmin\YleanaAdmin\bin\YleanaAdmin.pdb
+E:\PriWorks\Yleana\YleanaAdmin\YleanaAdmin\bin\Telerik.Web.UI.dll
+E:\PriWorks\Yleana\YleanaAdmin\YleanaAdmin\obj\Debug\YleanaAdmin.dll
+E:\PriWorks\Yleana\YleanaAdmin\YleanaAdmin\obj\Debug\YleanaAdmin.pdb
+E:\PriWorks\Yleana\YleanaAdmin\YleanaAdmin\obj\Debug\YleanaAdmin.csprojResolveAssemblyReference.cache
+D:\Code\YleanaAdmin\bin\YleanaAdmin.dll
+D:\Code\YleanaAdmin\bin\YleanaAdmin.pdb
+D:\Code\YleanaAdmin\obj\Debug\YleanaAdmin.dll
+D:\Code\YleanaAdmin\obj\Debug\YleanaAdmin.pdb
+D:\Code\YleanaAdmin\obj\Debug\YleanaAdmin.csprojResolveAssemblyReference.cache

@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="yleana" Class="YleanaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=yleana;Integrated Security=False;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DefaultConnection" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.webpages_UsersInRoles" Member="webpages_UsersInRoles">
+    <Type Name="webpages_UsersInRole">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="webpages_Role_webpages_UsersInRole" Member="webpages_Role" ThisKey="RoleId" OtherKey="RoleId" Type="webpages_Role" IsForeignKey="true" />
+      <Association Name="webpages_Membership_webpages_UsersInRole" Member="webpages_Membership" ThisKey="UserId" OtherKey="UserId" Type="webpages_Membership" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.webpages_Roles" Member="webpages_Roles">
+    <Type Name="webpages_Role">
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="webpages_Role_webpages_UsersInRole" Member="webpages_UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="webpages_UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.webpages_Membership" Member="webpages_Memberships">
+    <Type Name="webpages_Membership">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ConfirmationToken" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsConfirmed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LastPasswordFailureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PasswordFailuresSinceLastSuccess" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordChangedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordVerificationToken" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="PasswordVerificationTokenExpirationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="webpages_Membership_webpages_UsersInRole" Member="webpages_UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="webpages_UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TagManagement" Member="TagManagements">
+    <Type Name="TagManagement">
+      <Column Name="idTag" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TagName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TagDescription" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dtModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CourseLocations" Member="CourseLocations">
+    <Type Name="CourseLocation">
+      <Column Name="idLocation" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idAddress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LocationName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="CourseLocation_StudentApplication" Member="StudentApplications" ThisKey="idLocation" OtherKey="idCourseLocation" Type="StudentApplication" />
+      <Association Name="Address_CourseLocation" Member="Address" ThisKey="idAddress" OtherKey="idAddress" Type="Address" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ApplicationStatusList" Member="ApplicationStatusLists">
+    <Type Name="ApplicationStatusList">
+      <Column Name="idApplicationStatus" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ApplicationStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ApplicationStatusList_StudentApplication" Member="StudentApplications" ThisKey="idApplicationStatus" OtherKey="idApplicationStatus" Type="StudentApplication" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Addresses" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="idAddress" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AddressName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Zip" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Address_CourseLocation" Member="CourseLocations" ThisKey="idAddress" OtherKey="idAddress" Type="CourseLocation" />
+      <Association Name="Address_App_StudentInfo" Member="App_StudentInfos" ThisKey="idAddress" OtherKey="idHomeAddress" Type="App_StudentInfo" />
+      <Association Name="Address_App_StudentInfo1" Member="App_StudentInfos1" ThisKey="idAddress" OtherKey="idParentAddress" Type="App_StudentInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PartnerOrgUsers" Member="PartnerOrgUsers">
+    <Type Name="PartnerOrgUser">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idPartnerOrg" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="PartnerOrganization_PartnerOrgUser" Member="PartnerOrganization" ThisKey="idPartnerOrg" OtherKey="idPartner" Type="PartnerOrganization" IsForeignKey="true" />
+      <Association Name="UserProfile_PartnerOrgUser" Member="UserProfile" ThisKey="idUser" OtherKey="idUser" Type="UserProfile" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ApplicationStatusTracking" Member="ApplicationStatusTrackings">
+    <Type Name="ApplicationStatusTracking">
+      <Column Name="idTrack" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InitialStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dtModified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmailMessages" Member="EmailMessages">
+    <Type Name="EmailMessage">
+      <Column Name="idEmail" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmailMessage" Member="EmailMessage1" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailSubject" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Keyword" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dtModified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PartnerOrganization" Member="PartnerOrganizations">
+    <Type Name="PartnerOrganization">
+      <Column Name="idPartner" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PartnerOrgName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactOneEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactTwoEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idAddress" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dtModfied" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ContactOneName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactTwoName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactOnePhone" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ContactTwoPhone" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="PartnerOrganization_PartnerOrgUser" Member="PartnerOrgUsers" ThisKey="idPartner" OtherKey="idPartnerOrg" Type="PartnerOrgUser" />
+      <Association Name="PartnerOrganization_PartnerOrgLocation" Member="PartnerOrgLocations" ThisKey="idPartner" OtherKey="idPartner" Type="PartnerOrgLocation" />
+      <Association Name="PartnerOrganization_StudentApplication" Member="StudentApplications" ThisKey="idPartner" OtherKey="idPartner" Type="StudentApplication" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PartnerOrgLocationList" Member="PartnerOrgLocationLists">
+    <Type Name="PartnerOrgLocationList">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="PartnerOrgLocationList_PartnerOrgLocation" Member="PartnerOrgLocations" ThisKey="id" OtherKey="idLocation" Type="PartnerOrgLocation" />
+      <Association Name="PartnerOrgLocationList_StudentApplication" Member="StudentApplications" ThisKey="id" OtherKey="idPartnerLocation" Type="StudentApplication" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PartnerOrgLocation" Member="PartnerOrgLocations">
+    <Type Name="PartnerOrgLocation">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idPartner" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idLocation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="PartnerOrganization_PartnerOrgLocation" Member="PartnerOrganization" ThisKey="idPartner" OtherKey="idPartner" Type="PartnerOrganization" IsForeignKey="true" />
+      <Association Name="PartnerOrgLocationList_PartnerOrgLocation" Member="PartnerOrgLocationList" ThisKey="idLocation" OtherKey="id" Type="PartnerOrgLocationList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfile" Member="UserProfiles">
+    <Type Name="UserProfile">
+      <Column Name="idUser" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dtModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtLastLogin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="UserProfile_PartnerOrgUser" Member="PartnerOrgUsers" ThisKey="idUser" OtherKey="idUser" Type="PartnerOrgUser" />
+      <Association Name="UserProfile_StudentApplication" Member="StudentApplications" ThisKey="idUser" OtherKey="idUser" Type="StudentApplication" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SessionInformation" Member="SessionInformations">
+    <Type Name="SessionInformation">
+      <Column Name="idSession" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Startime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="idLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SessionName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SessionDesc" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ApplicationDates" Member="ApplicationDates">
+    <Type Name="ApplicationDate">
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AppYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="idAppDate" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ApplicationStatusTracking" Member="ApplicationStatusTracking1s">
+    <Type Name="ApplicationStatusTracking1">
+      <Column Name="idTrack" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InitialStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dtModified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_StudentInfo" Member="App_StudentInfos">
+    <Type Name="App_StudentInfo">
+      <Column Name="idStudent" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfBirth" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ethnicity" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idHomeAddress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentGuardianName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Relationship" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentGuardianContact" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentGuardianEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idParentAddress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmergencyContact" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dtModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GenderText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Race" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RaceText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CountryText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LanguageSpeak" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LanguageText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StayHomeWith" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StayHomeWithText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RelationshipText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentGuardianAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PracticeTestSaterday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Address_App_StudentInfo" Member="Address" ThisKey="idHomeAddress" OtherKey="idAddress" Type="Address" IsForeignKey="true" />
+      <Association Name="Address_App_StudentInfo1" Member="Address1" ThisKey="idParentAddress" OtherKey="idAddress" Type="Address" IsForeignKey="true" />
+      <Association Name="StudentApplication_App_StudentInfo" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_EducationalInfo" Member="App_EducationalInfos">
+    <Type Name="App_EducationalInfo">
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HighSchoolName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GraduationYear" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FreeLunch" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CurrentGPA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExtendedStandardizedTime" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExtendedTimeAtSchool" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HelperRequired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OfficialSAT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OfficialSATTotalScore" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OfficialSATReadingScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OfficialSATWritingScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OfficialSATMathScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticeSAT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PracticeSATScore" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PracticeSATReadingScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticeSATWritingScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticeSATMathScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OtherstandardizedTests" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OfficialSATEssayScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PracticeSATEssayScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GraduationYearText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CurrentGPAText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExtendedStandardizedTimeText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExtendedStandardizedTestName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExtendedTimeAtSchoolText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StudiedForSAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StudiedForSATText" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="StudentApplication_App_EducationalInfo" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_College_Intrest_Info" Member="App_College_Intrest_Infos">
+    <Type Name="App_College_Intrest_Info">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NeedFinancialAid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HaveCounselorAdviser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ApplyColleges" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ApplyForSpecialSupport" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TypeOfSchool" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="StudentApplication_App_College_Intrest_Info" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_Travel_Camp_Info" Member="App_Travel_Camp_Infos">
+    <Type Name="App_Travel_Camp_Info">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TraveledOutOfState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AwayFromHomeMoreThanOneWeek" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContextOfAwayFromHome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContextOfAwayFromHomeText" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Association Name="StudentApplication_App_Travel_Camp_Info" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_FamilyInfo" Member="App_FamilyInfos">
+    <Type Name="App_FamilyInfo">
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AnnualFamilyIncome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FamilyIncomeContribution" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FirstGraduation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ParentsSAT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ParentsEducation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SchoolAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentsGuardianfamiliarUSEducation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FamilyIncomeContributionText" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="FirstGraduationText" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ParentsGuardianAttendHighSchool" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HaveSiblings" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SiblingsGender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SiblingsYoungerElder" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SiblingsCollege" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AnyoneGraduateHigherEducation" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="StudentApplication_App_FamilyInfo" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_Session_info" Member="App_Session_infos">
+    <Type Name="App_Session_info">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HaveSessionConflict" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ConflictSessionAttend" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PreferSession" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PreferSessionReason" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PreferSessionToAttend" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="App_Session_info_App_Session_info" Member="App_Session_info2" ThisKey="id" OtherKey="id" Type="App_Session_info" Cardinality="One" />
+      <Association Name="App_Session_info_App_Session_info" Member="App_Session_info1" ThisKey="id" OtherKey="id" Type="App_Session_info" IsForeignKey="true" />
+      <Association Name="StudentApplication_App_Session_info" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.App_StudentScores" Member="App_StudentScores">
+    <Type Name="App_StudentScore">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TestScore1Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore1WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore1Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore1Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore1CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore2Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore2WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore2Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore2Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore2CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore3Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore3WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore3Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore3Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore3CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore4Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore4WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore4Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore4Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore4CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore5Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore5WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore5Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore5Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore5CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore6Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore6WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore6Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore6Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore6CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore7Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore7WR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore7Math" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore7Essay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TestScore7CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="StudentApplication_App_StudentScore" Member="StudentApplication" ThisKey="idApplication" OtherKey="idApplication" Type="StudentApplication" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentApplications" Member="StudentApplications">
+    <Type Name="StudentApplication">
+      <Column Name="idApplication" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dtSubmitted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idApplicationStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dtUpdated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TagIds" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="transcriptUploaded" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="essayUploaded" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="partnerRecomUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="studentResponse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtStudentResponse" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ParentContactVerified" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ConductUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PermissionSlipUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ParentSupportUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MedicalFormUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AdditionalInfoUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FormsComplated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WasWaitListed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="idPartner" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCourseLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPartnerLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResumeUploaded" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WorkExperience" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="StudentApplication_App_StudentInfo" Member="App_StudentInfos" ThisKey="idApplication" OtherKey="idApplication" Type="App_StudentInfo" />
+      <Association Name="StudentApplication_App_EducationalInfo" Member="App_EducationalInfos" ThisKey="idApplication" OtherKey="idApplication" Type="App_EducationalInfo" />
+      <Association Name="StudentApplication_App_College_Intrest_Info" Member="App_College_Intrest_Infos" ThisKey="idApplication" OtherKey="idApplication" Type="App_College_Intrest_Info" />
+      <Association Name="StudentApplication_App_Travel_Camp_Info" Member="App_Travel_Camp_Infos" ThisKey="idApplication" OtherKey="idApplication" Type="App_Travel_Camp_Info" />
+      <Association Name="StudentApplication_App_FamilyInfo" Member="App_FamilyInfos" ThisKey="idApplication" OtherKey="idApplication" Type="App_FamilyInfo" />
+      <Association Name="StudentApplication_App_Session_info" Member="App_Session_infos" ThisKey="idApplication" OtherKey="idApplication" Type="App_Session_info" />
+      <Association Name="StudentApplication_App_StudentScore" Member="App_StudentScores" ThisKey="idApplication" OtherKey="idApplication" Type="App_StudentScore" />
+      <Association Name="ApplicationStatusList_StudentApplication" Member="ApplicationStatusList" ThisKey="idApplicationStatus" OtherKey="idApplicationStatus" Type="ApplicationStatusList" IsForeignKey="true" />
+      <Association Name="CourseLocation_StudentApplication" Member="CourseLocation" ThisKey="idCourseLocation" OtherKey="idLocation" Type="CourseLocation" IsForeignKey="true" />
+      <Association Name="PartnerOrganization_StudentApplication" Member="PartnerOrganization" ThisKey="idPartner" OtherKey="idPartner" Type="PartnerOrganization" IsForeignKey="true" />
+      <Association Name="PartnerOrgLocationList_StudentApplication" Member="PartnerOrgLocationList" ThisKey="idPartnerLocation" OtherKey="id" Type="PartnerOrgLocationList" IsForeignKey="true" />
+      <Association Name="UserProfile_StudentApplication" Member="UserProfile" ThisKey="idUser" OtherKey="idUser" Type="UserProfile" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.usp_GetAllPartners" Method="usp_GetAllPartners">
+    <ElementType Name="usp_GetAllPartnersResult">
+      <Column Name="idPartner" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerOrgName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactOneEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactTwoEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idAddress" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dtCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dtModfied" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ContactOneName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactTwoName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactOnePhone" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ContactTwoPhone" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="idLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.usp_GetAllPartnerLocations" Method="usp_GetAllPartnerLocations">
+    <ElementType Name="usp_GetAllPartnerLocationsResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.USP_AddAddress" Method="USP_AddAddress">
+    <Parameter Name="addressname" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Address1" Parameter="address1" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="address2" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="city" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="state" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="zip" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="idAddress" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.USP_CreateApplication" Method="USP_CreateApplication">
+    <Parameter Name="idUser" Type="System.Int32" DbType="Int" />
+    <Parameter Name="firstname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lastname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="contactNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="idPartner" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idLocation" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

@@ -1,0 +1,883 @@
+@import url('../ss/ss-standard.css');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic');
+
+input, a, p, label, .ui-btn { font-family: 'PT Sans', sans-serif !important; }
+a {text-decoration: none;}
+body {
+	font-size: 14px !important;
+}
+body, html, .ui-page, .ui-panel-wrapper, .ui-content { height: 100% !important; }
+
+body, .TopPanel,
+#ALM-dashboard-content,
+#ALM-summaryData-content {
+	max-width: 1024px !important;
+}
+#divTable tfoot, .page-mrr-dashboard div#divTable tfoot {
+    width: 100%;
+}
+
+.btnDisabled {
+	opacity: .0 !important;
+}
+
+a.RightNavArrow,
+a.LeftNavArrow {
+	padding: 0 10px;
+}
+
+#ALM-login > div.ui-checkbox > label {
+	padding: 2px 15 !important;
+	height: 30px !important;
+}
+
+.ui-icon-check:after, html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
+	background-image: none !important; /* remove white checkmark on remember me */
+}
+
+#ALMApp, .ui-panel-wrapper, .ui-content {
+	background: #f5f4f4 !important;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Buttons */
+
+.fullWidthBtn .ui-link {
+    color: #ffffff !important;
+    font-weight: 400 !important;
+}
+
+.fullWidthBtn {
+	color: #ffffff !important;
+	background-color: #00386b !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	height: 22px !important;
+	line-height: 22px !important;
+	margin-top: 25px !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+	text-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	width: 100%;
+	text-align: center !important;
+}
+.page-alm-settings div.dashb-row.settings-row {
+	margin-top: 20px;
+}
+
+input.ui-btn.btnUpdate.ButtonSq.fullWidthBtn.ui-button.ui-widget.ui-state-default.ui-corner-all,
+input.ui-btn.btnLogin.ButtonSq.fullWidthBtn.ui-button.ui-widget.ui-state-default.ui-corner-all {
+	line-height: 15px !important;
+	margin-top: 30px !important;
+}
+
+img#divSortDownTitle, img#divSortUpTitle {
+	width: 30px;
+	top: 5px;
+	position: relative;
+}
+
+img#divSortUp, img#divSortDown,
+img.divSortUp, img.divSortDown {
+	width: 14px;
+	top: 4px;
+	position: relative;
+}
+
+/* Clear inputs */
+
+
+/* Dropdowns */
+.ui-select span,
+.errorCookies {
+	text-align: left !important;
+}
+
+.ui-btn-corner-all, .ui-btn.ui-corner-all, .ui-slider-track.ui-corner-all, .ui-flipswitch.ui-corner-all, .ui-li-count {
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+}
+.ui-btn-icon-left:after, 
+.ui-btn-icon-right:after, 
+.ui-btn-icon-top:after, 
+.ui-btn-icon-bottom:after, 
+.ui-btn-icon-notext:after {
+	background-color: transparent !important; /* dropdown circle */
+	background-position: center 3px !important;
+}
+
+.foot td a {
+	margin: 0 10px;
+	width: 15px;
+	height: 15px;
+}
+
+/* Datepicker */
+.ui-datepicker .ui-datepicker-header {
+	border-radius: 0;
+}
+.ui-datepicker td {
+	padding: 3px;
+}
+#ui-datepicker-div {
+	border-radius: 0;
+	padding: 2px;
+	width: 245px;
+}
+
+
+* {
+	outline: none !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+}
+
+
+.linkTxtBlue, .linkTxtBlue a {
+	color: #0069ad;
+	font-size: 16px;
+	font-weight: 400 !important;
+	text-decoration: none;
+}
+.ui-content {
+	padding: 0;
+}
+
+.txtColor-Red {
+	color: #e31c23 !important;
+}
+.txtColor-Orange {
+	color: #f47e3a !important;
+}
+
+/* Icons */
+.appIconSprite {
+    background: url(../images/sprite-icons.png) no-repeat top left;
+    display: inline-block;
+}
+.iconApp-ALM-nav,
+.iconApp-IR-nav,
+.iconApp-MR-nav,
+.iconApp-PRR-nav {
+	width: 32px;
+	height: 34px;
+	background-size: 60px;
+	/* margin: 0 5% 0 2%; */
+	top: -5px;
+	position: relative;
+	vertical-align: middle;
+	right: 9px;
+}
+.iconApp-ALM-nav{ 
+	background-position: 0 0;
+} 
+.iconApp-IR-nav{ 
+	background-position: 0 -119px;
+} 
+.iconApp-MR-nav{ 
+	background-position: 0 -241px;
+} 
+.iconApp-PRR-nav{ 
+	background-position: 0 -360px;
+} 
+.iconApp-ALM{ background-position: 0 -88px; width: 110px; height: 110px; } 
+.iconApp-IR{ background-position: 0 -311px; width: 110px; height: 110px; } 
+.iconApp-MR{ background-position: 0 -534px; width: 110px; height: 110px; } 
+.iconApp-PRR{ background-position: 0 -757px; width: 110px; height: 110px; } 
+
+
+/*********/
+/* Login */
+/*********/
+
+#ALM-login a {
+	font-weight: 400;
+	color: #0069ad;
+}
+
+#ALM-login h1 {
+	font-style: italic;
+}
+#ALM-login > div.ui-checkbox > label {
+	color: #626161;
+	font-size: 16px;
+	background: transparent;
+	margin-left: 20px;
+}
+.WilLogo-ALM01 {
+	display: block;
+	width: 100%;
+	max-width: 470px;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	margin-top: 10%;
+}
+#ALM-login {
+	width: 100%;
+	max-width: 470px;
+	margin: 0 auto;
+}
+.ALM-login-wrap {
+	display: block;
+	padding: 0 0 30px 0;
+	position: relative;
+	margin: 0 auto;
+	width: 90% !important;
+	max-width: 470px;
+}
+#ALMApp label.TextBoxInput {
+	color: #626161;
+	font-style: italic;
+	font-size: 24px;
+	margin-top: 25px;
+}
+.ALM-login01 .ui-input-btn input {
+	border: none !important;
+}
+.ALM-login01 .ui-input-btn {
+	color: #ffffff !important;
+	background-color: #00386b !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	margin-top: 25px !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+	text-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.LoginRememberMe label {
+	color: #626161;
+	font-weight: 400 !important;
+	font-style: italic;
+	padding: 0;
+	text-indent: 30px;
+	height: 30px;
+	overflow: hidden;
+	line-height: 45px;
+	font-size: 20px !important;
+}
+
+#ALM-dashboard-content .ui-input-btn,
+div.ui-btn.ui-input-btn.ui-corner-all.ui-shadow,
+#QMD-selector .ui-input-btn {
+	color: #ffffff !important;
+	background-color: #00386b !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	height: 22px !important;
+	line-height: 22px !important;
+	margin-top: 25px !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+	text-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/*********/
+/* UI CSS Overrides */
+/*********/
+/* General */
+a, p, label { 
+	border: none !important;
+	text-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+/* Login */
+.ui-input-text, .ui-body-inherit, .ui-shadow-inset {
+	border: none !important;
+	text-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
+}
+#ALMApp input.TextBox {
+	color: #b0b1b1;
+	height: 45px;
+	font-style: italic;
+	font-size: 22px;
+}
+#ALMApp input, #ALMApp button {
+	border: 1px solid #b5b5b5;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	text-shadow: none !important;
+}
+
+/* Error styles */
+#ALMApp input.error {
+	border-color:#f47e3a;
+}
+.errorInvalidIDPass {
+	text-align: center;
+}
+.errorMsg, .error {
+	display: none;
+	color: #f47e3a;
+	font-style: italic;
+	font-size: 20px !important;
+	margin: 5px 0 !important;
+}
+.forgotIDPass {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+/* Top Panel */
+#ALM-dashboard-default .TopPanel {
+	background: #e8e8e8;
+	height: auto !important;
+	position: fixed;
+	display: block;
+	width: 100%;
+	z-index: 99;
+	padding-bottom: 5px;
+}
+
+
+/* Sidepanel Sidepanel */
+#ALMApp #SidePanel {
+	background: #e8e8e8 !important;
+	border-right:2px solid #e6e6e6 !important;
+	-moz-box-shadow: inset -3px 3px  16px -4px #cacaca !important;
+	-webkit-box-shadow: inset -3px 3px  16px -4px #cacaca !important;
+	box-shadow: inset -3px 3px  16px -4px #cacaca !important;
+}
+.TopPanel .SidePanelLogo.defaultStyle > a {
+	float: left;
+	line-height: 50px;
+	padding-left: 2%;
+	position: absolute;
+	font-size: 25px;
+	color: #606060;
+}
+.SidePanelLogo img {
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height: 40px;
+}
+#ALMApp .SidePanelLogo.defaultStyle {
+	height: 50px;
+	background: #F1F1F0;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+}
+#ALMApp .SidePanelLogo.mobileStyle {
+	float: left;
+	height: 75px;
+	width: 100%;
+	position: relative;
+}
+#ALMApp .SidePanelLogo.mobileStyle .ui-link {
+	padding: 7px;
+	background:#F1F1F0;
+	float: left;
+	width: 75px;
+}
+#ALMApp .dashboard-welcome.mobileStyle {
+	font-size: 16px;
+	float: left;
+	height: 75px;
+	padding: 10px 0 10px 20px;
+	margin: 0;
+	line-height: 75px;
+}
+
+#ALM-dashboard-default-content,
+#general-settings-default-content {
+	margin: 110px 0 50px 0 !important;
+	overflow: hidden;
+	width: 100%;
+}
+
+.page-mrr-dashboard #ALM-dashboard-default-content,
+.page-investment-research #ALM-dashboard-default-content {
+	margin: 100px 0 0 0 !important;
+}
+
+
+.page-prr-dashboard #ALM-dashboard-default-content,
+.page-summary-alm #ALM-dashboard-default-content,
+.page-alm-settings #ALM-dashboard-default-content,
+.page-contact #general-settings-default-content {
+	margin: 150px 0 0 0 !important;
+}
+.page-contact label.select.row-label {
+	font-size: 16px !important;
+}
+
+.page-alm-interest-table #ALM-dashboard-default-content,
+.page-alm-interest-chart #ALM-dashboard-default-content,
+.page-alm-interest-daily #ALM-dashboard-default-content,
+.page-assetsliabilities-table-chart #ALM-dashboard-default-content {
+	margin: 200px 0 50px 0 !important;
+}
+
+.page-assetsliabilities-table-chart #ALM-dashboard-default-content {
+	padding: 200px 2% 50px 2% !important;
+	margin: 0 !important;
+}
+.page-assetsliabilities-table-chart #divCustomDates,
+.page-assetsliabilities-table-chart .DivCustomDates {
+	bottom: 80px;
+	position: relative;
+}
+
+#ALM-dashboard-default-content .appTitle {
+	width: 81% !important;
+}
+
+
+/* No scroll in sidepanel */
+.ui-panel.ui-panel-open {
+	position:fixed !important;
+}
+.ui-panel-inner {
+	padding: 0% !important;
+  position: absolute !important;
+  top: 1px !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0px !important;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Cotact Us */
+.page-contact .dashb-row.settings-row {
+	margin-bottom:30px;
+}
+
+.page-contact textarea#ContactMessage {
+	border: 2px solid #dddddd !important;
+	min-height: 150px;
+}
+.page-contact input.ui-btn.btnLogin.ButtonSq.ui-button.ui-widget.ui-state-default.ui-corner-all,
+.page-manage-users input.ui-btn.btnUpdate.ButtonSq.ui-button.ui-widget.ui-state-default.ui-corner-all {
+width: 100%;
+} {
+	width: 100%;
+}
+
+
+/*********/
+/* Responsive */
+/*********/
+
+/* Tablets + */
+@media only screen and (min-width : 651px) {
+	#ALMApp .mobileStyle {
+		display: none !important;
+	}
+
+	/* Side Panel Width Override */
+	.ui-panel {
+		width: 325px;
+	}
+	.ui-panel-inner {
+		width: 335px; /* 10px wider to hide scrollbar */
+	}
+	.ui-panel-page-content-position-left{
+		left:325px;
+		right:-325px;
+		}
+	.ui-panel-animate.ui-panel-page-content-position-left {
+		-webkit-transform:translate3d(325px,0,0);
+		-moz-transform:translate3d(325px,0,0);
+		transform:translate3d(325px,0,0);
+	}
+	.ui-panel-page-content-position-right {
+	    left:-325px;
+	    right:325px;
+	}
+	.ui-panel-animate.ui-panel-page-content-position-right {
+	    left:0;
+	    right:0;
+	    -webkit-transform:translate3d(-325px, 0, 0);
+	    -moz-transform:translate3d(-325px, 0, 0);
+	    transform:translate3d(-325px, 0, 0);
+	}
+	.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+	    left:325px;
+	}
+	.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
+	    right:325px;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left {
+	    margin-right:325px;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right {
+	    margin-left:325px;
+	}
+}
+
+/* iPhone 5 320px max width 
+@media only screen and (max-width : 320px) {
+	#ALM-dashboard-default-content .dashb-3col-row {
+		height: 75px !important;
+	}
+	#ALM-dashboard-default-content .appIcon {
+		padding: 7px !important;
+	}
+	#ALM-dashboard-default-content .appTitle {
+		height: 75px !important;
+		line-height: 75px !important;
+		padding: 0 0 0 2% !important;
+		width: 83% !important;
+	}
+	#ALM-dashboard-default-content .appArrow {
+		height: 75px !important;
+		width: 6% !important;
+		line-height:85px !important;
+	}
+
+	/* Float dashboard content and make 100% max width
+	#ALM-dashboard-default-content,
+	#general-settings-default-content {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		float: left;
+	}
+	
+	/* Summary 
+	#ALM-summaryData-content .TopPanel .OneColSelect {
+		width: 100px;
+	}
+	#ALM-summaryData-content .TopPanel .TwoColSelect {
+		width: 100px;
+	}
+	.TopPanel > div.ui-select {
+		margin: 0 0 0 100px !important;
+		width: 220px !important;
+	}
+
+	.TopPanel > div.TowColSelect {
+		width: 220px !important;
+	}
+	.TopPanel > div.TowColSelect .ui-select {
+		width: 105px !important;
+	}
+	.utilityBar {
+		width: 63px !important;
+	}
+	.utilityBar .ss-icon {
+		margin-right: 9px !important;
+	}
+
+	/* General Settings 
+	.page-settings .TopPanel,
+	.page-general-settings .TopPanel,
+	.page-settings-alm .TopPanel,
+	.page-alm-interest-daily .TopPanel,
+	.page-general-settings .TopPanel {
+		height: 75px !important;
+	}
+	#general-settings-default-content .dashb-2col-row.settings-row,
+	#general-settings-default-content .dashb-2col-row.breadcrumbs,
+	#general-settings-default-content .defaultapp-row {
+		font-size: 16px !important;
+	}
+	#general-settings-default-content .dashb-2col-row {
+		margin: 5px 0 !important;
+	}
+	#general-settings-default-content .dashb-2col-row.breadcrumbs {
+		height: 65px;
+		margin: 0 0 -5px 0 !important;
+	}
+	#ALM-dashboard-default-content .appIcon {
+		width: 61px !important;
+		height: 61px !important;
+		line-height: 61px !important;
+	}
+
+	/* Dashboard 
+	#ALM-dashboard-content h1.dashboard-welcome {
+		font-size: 16px !important;
+	}
+	#ALM-summaryData-content #select-pension-plan-button span,
+	.TopPanel div.TowColSelect .ui-select span {
+		font-size: 16px !important;
+	}
+
+	/* ALM Settings 
+	.dashboard-apps.alm-settings .dashb-row {
+		width: 260px !important;
+	}
+
+	/* Side Panel Width Override 
+
+	.ui-panel {
+		width: 250px;
+	}
+	.ui-panel-inner {
+		width: 260px; /* 10px wider to hide scrollbar 
+	}
+	.ui-panel-page-content-position-left{
+		left:250px;
+		right:-250px;
+		}
+	.ui-panel-animate.ui-panel-page-content-position-left {
+		-webkit-transform:translate3d(250px,0,0);
+		-moz-transform:translate3d(250px,0,0);
+		transform:translate3d(250px,0,0);
+	}
+	.ui-panel-page-content-position-right {
+	    left:-250px;
+	    right:250px;
+	}
+	.ui-panel-animate.ui-panel-page-content-position-right {
+	    left:0;
+	    right:0;
+	    -webkit-transform:translate3d(-250px, 0, 0);
+	    -moz-transform:translate3d(-250px, 0, 0);
+	    transform:translate3d(-250px, 0, 0);
+	}
+	.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+	    left:250px;
+	}
+	.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
+	    right:250px;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left {
+	    margin-right:250px;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right {
+	    margin-left:250px;
+	}
+
+	/* SidePanel UserInfo Smaller Fonts 
+	.SidePanel-UserInfo {
+		font-size: 16px !important;
+	}
+	.SidePanel-UserInfo date {
+		font-size: 12px !important;
+	}
+	.appInfo.ALMInfo .ui-listview li,
+	.ui-collapsible-heading-toggle.ui-link, .ui-collapsible-heading-toggle.ui-link:hover {
+		font-size: 12px !important;
+	}
+	.SidePanelMenu li a {
+		font-size: 16px !important;
+	}
+	div#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+		top: 179px !important;
+		left: 35px !important;
+	}
+	#ALM-dashboard-default-content .appTitle { 
+		width: 72% !important;
+	}
+}
+
+*/
+
+/* Phones Galaxy SIII 360px max width */
+/*************************************/
+@media only screen and (max-width : 650px) {
+	/* Float dashboard content and make 100% max width */
+	#ALM-dashboard-default-content,
+	#general-settings-default-content {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		float: left;
+		max-width: 100%;
+	}
+	#ALM-dashboard-default-content .dashboard-apps {
+		max-width: 100% !important;
+	}
+	#ALM-dashboard-default-content .dashb-3col-row {
+		height: 75px !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+	#ALM-dashboard-default-content .appIcon {
+		padding: 7px !important;
+	}
+	#ALM-dashboard-default-content .appTitle {
+		height: 75px !important;
+		line-height: 75px !important;
+		padding: 0 0 0 10px !important;
+		width: 61.6% !important;
+	}
+	#ALM-dashboard-default-content .appIcon {
+		width: 61px !important;
+		height: 61px !important;
+		line-height: 61px !important;
+	}
+	#ALM-dashboard-default-content .appTitle h2 {
+		font-size: 16px;
+	}
+	#ALM-dashboard-default-content .appArrow {
+		height: 75px !important;
+		width: 44px !important;
+		line-height:75px !important;
+	}
+
+	#ALM-dashboard-default-content .appTitle { 
+		width: 61% !important;
+	}
+
+	/* Summary */
+	#ALM-summaryData-content .TopPanel .OneColSelect {
+		width: 100px;
+	}
+	#ALM-summaryData-content .TopPanel .TwoColSelect {
+		width: 100px;
+	}
+	.TopPanel > div.ui-select {
+		margin: 0 0 0 100px !important;
+		width: 250px !important;
+	}
+
+	.TopPanel > div.TowColSelect {
+		width: 250px !important;
+	}
+	.TopPanel > div.TowColSelect .ui-select {
+		width: 120px !important;
+	}
+	.utilityBar {
+		width: 73px !important;
+	}
+	.utilityBar .ss-icon {
+		margin-right: 12px !important;
+	}
+
+	/* General Settings */
+	.page-settings .TopPanel,
+	.page-general-settings .TopPanel,
+	.page-settings-alm .TopPanel,
+	.page-alm-interest-daily .TopPanel {
+		height: 75px !important;
+	}
+	#general-settings-default-content .dashb-2col-row.settings-row,
+	#general-settings-default-content .dashb-2col-row.breadcrumbs,
+	#general-settings-default-content .defaultapp-row {
+		font-size: 16px !important;
+	}
+	#general-settings-default-content .dashb-2col-row {
+		margin: 5px 0 !important;
+	}
+	#general-settings-default-content .dashb-2col-row.breadcrumbs {
+		height: 75px;
+		margin: 0 0 -5px 0 !important;
+	}
+
+	.page-general-settings #general-settings-default-content {
+		margin: 120px 0 50px 0 !important;
+	}
+
+	/* Dashboard */
+	#ALM-dashboard-content h1.dashboard-welcome {
+		font-size: 16px !important;
+	}
+	/*
+	#ALM-summaryData-content #select-pension-plan-button span,
+	.TopPanel > div.TowColSelect .ui-select span,
+	.TopPanel div.TowColSelect .ui-select span {
+		font-size: 12px !important;
+	}
+	*/
+
+	/* ALM Settings */
+	.dashboard-apps.alm-settings .dashb-row {
+		width: 300px !important;
+	}
+
+	/* Side Panel Width Override */
+
+	.ui-panel {
+		width: 250px;
+	}
+	.ui-panel-inner {
+		width: 260px; /* 10px wider to hide scrollbar */
+	}
+	.ui-panel-page-content-position-left{
+		left:250px;
+		right:-250px;
+		}
+	.ui-panel-animate.ui-panel-page-content-position-left {
+		-webkit-transform:translate3d(250px,0,0);
+		-moz-transform:translate3d(250px,0,0);
+		transform:translate3d(250px,0,0);
+	}
+	.ui-panel-page-content-position-right {
+	    left:-250px;
+	    right:250px;
+	}
+	.ui-panel-animate.ui-panel-page-content-position-right {
+	    left:0;
+	    right:0;
+	    -webkit-transform:translate3d(-250px, 0, 0);
+	    -moz-transform:translate3d(-250px, 0, 0);
+	    transform:translate3d(-250px, 0, 0);
+	}
+	.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+	    left:250px;
+	}
+	.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
+	    right:250px;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left {
+	    margin-right:250px;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right {
+	    margin-left:250px;
+	}
+
+	/* SidePanel UserInfo Smaller Fonts */
+	.SidePanel-UserInfo {
+		font-size: 14px !important;
+	}
+	.SidePanel-UserInfo date {
+		font-size: 12px !important;
+	}
+	.appInfo.ALMInfo .ui-listview li,
+	.ui-collapsible-heading-toggle.ui-link, .ui-collapsible-heading-toggle.ui-link:hover {
+		font-size: 12px !important;
+	}
+	.SidePanelMenu li a {
+		font-size: 12px !important;
+	}
+
+	.ui-btn-icon-left:after, 
+	.ui-btn-icon-right:after, 
+	.ui-btn-icon-top:after, 
+	.ui-btn-icon-bottom:after, 
+	.ui-btn-icon-notext:after {
+		background-color: transparent !important; /* dropdown circle */
+		background-position: 98% 3px !important;
+	}
+
+	 /* Safari only status bar */
+	 @media screen and (-webkit-min-device-pixel-ratio:0) {
+	  .StatusBar {
+	  	display: block;
+	  	position: fixed;
+	  	background: #cccccc;
+	  	width: 100%;
+	  	height: 23px;
+	  	top: 0;
+	  }
+	}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#ALM-dashboard-default-content .appTitle {
+		width: 76% !important;
+	}
+}

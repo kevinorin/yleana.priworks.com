@@ -1,0 +1,1452 @@
+/* Fonts */
+h1 { 
+	color:#606060;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 400;
+}
+h1.smaller {
+	font-size:16px;
+	line-height:16px;
+	font-weight:600;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	text-shadow: none;
+}
+.UtilityControlsWrap h1 {
+	text-align: center;
+}
+#ALM-dashboard-content h1.dashboard-welcome {
+	line-height:55px !important;
+}
+
+label {
+	color: #626161 !important;
+	font-size: 24px !important;
+}
+.btn, .ui-btn-icon-notext.ui-btn-corner-all, .ui-btn-icon {
+	border-radius: 0 !important;
+	-webkit-appearance: none !important;
+    -webkit-border-radius:0 !important; 
+}
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+	font-weight: inherit;
+}
+.validation-summary-errors ul {
+	padding: 0 !important;
+}
+.validation-summary-errors li {
+	list-style: none !important;
+}
+.appErrorMessage {
+	display:block;
+    font-weight: 600;
+    padding: 5% 0;
+	margin-top: 5px;
+    text-align: left;
+}
+/***** Dashboard *****/
+.dashb-3col-row .appTitle h2 a,
+.dashb-3col-row .appTitle h2 a:visited {
+	color: #ffffff;
+}
+.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
+	margin-right: 0px !important;
+}
+
+.TopPanel h3 a:visited, .TopPanel h3 a:visited, .TopPanel h3 a:visited {
+	color: #ffffff;
+	display: block;
+	font-size: 12px;
+	line-height: 40px;
+	text-transform:uppercase;
+}
+
+#ALM-dashboard-default-content,
+#general-settings-default-content {
+	display: block;
+	overflow: hidden;
+	position: relative;	
+	padding: 0 2%;
+	width: 96%;
+}
+
+.col1.displayOne {
+	width: 96% !important;
+	}
+.col2.displayOne {
+	width: 67% !important;
+}
+
+.UtilityControlsWrap {
+	overflow: hidden;
+	padding: 0 2%;
+	width:96%;
+}
+.TopPanel > div.ui-select,
+.dashboard-welcome,
+.TopPanel .smaller {
+}
+
+/* Utility Bar */
+.utilityBar {
+	margin: 27px 0 0 27px;
+	float: left;
+	position: relative;
+	padding: 0;
+	width:78px;
+}
+.page-summary-alm .utilityBar {
+	margin: 0;
+	float: right;
+	position: relative;
+	padding: 0;
+	width: 100px;
+}
+.page-summary-alm #divCalendar {
+	display: inline-block;
+}
+
+.utilityBar .ss-icon,
+#DateNav .ss-icon {
+	font-size: 20px;
+	color: #606060;
+}
+.utilityBar .ss-icon{
+	margin-right: 16px;
+}
+.divCalendar {
+	display: inline-block;
+	position: relative;
+	left: 20%;
+}
+#DateNav .ss-icon {
+	margin: 0 3px;
+}
+
+span.ss-icon.ss-view {
+	top: 3px;
+	position: relative;
+}
+
+
+/* 2 column row */
+#general-settings-default-content .dashb-2col-row.settings-row,
+#general-settings-default-content .dashb-2col-row.settings-row a, 
+#general-settings-default-content .dashb-2col-row.settings-row a:hover,
+#general-settings-default-content .dashb-2col-row.settings-row a:visited,
+#general-settings-default-content .dashb-2col-row.settings-row span.settings-col2.ss-icon {
+	color:#737373 !important;
+}
+#general-settings-default-content .clientName {
+	color: #ffffff;
+	margin-left:100px;
+	text-shadow: none;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+/* breadcrumbs */
+#general-settings-default-content a.ss-icon,
+.alm-settings a.ss-icon {
+	color: #0069ad !important;
+	margin-right: 40px;
+	vertical-align: top;
+	height: 75px;
+	line-height: 75px;
+}
+
+/* 1 column ALM Settings */
+#ALM-dashboard-default-content .breadcrumbs {
+	margin: 10px 0 30px 30px;
+}
+.dashb-row {
+	float: none;
+	clear: both;
+	margin: 0;
+}
+.dashboard-apps.alm-settings .dashb-row {
+	overflow: hidden;
+	height: auto;
+	padding-bottom: 30px;
+}
+.dashboard-apps.alm-settings .dashb-row .select.row-label {
+	color: #737373;
+	font-size: 16px;
+	font-weight: 400;
+	text-shadow: none;
+}
+
+.alm-settings .dashb-row.settings-row {
+	margin-bottom: 50px;
+}
+#ALM-dashboard-default-content .dashb-row.settings-row .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+	margin-top: 80px !important;
+}
+
+/* Settings Manage Users */
+.ManageUsers {
+	clear: both;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	margin: 0 !important;
+}
+.ManageUsers .List-ManageUsers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ManageUsers .List-ManageUsers li {
+	padding: 10px 20px;
+}
+.ManageUsers .List-ManageUsers li:nth-child(odd) {
+	background-color: #bcbcbc;
+}
+.ManageUsers .List-ManageUsers li .ui-checkbox,
+.ManageUsers .List-ManageUsers li .manage-user {
+	display: inline-block;
+	position: relative;
+}
+.ManageUsers .List-ManageUsers li .manage-user {
+	margin: 0 0 0 30px;
+}
+
+
+/* dropdown */
+.dashb-row.settings-row .ui-select,
+.dashb-row.settings-row #select-pension-plan-button,
+#ALM-summaryData-content .ui-select,
+.page-assetsliabilities-table-chart select#DateType,
+.page-assetsliabilities-table-chart select#DateRangeType {
+	border-radius: 0;
+	border: none;
+	height:30px;
+	width:100%;
+	overflow: hidden;
+}
+
+.headerSubLabel {
+    background: #00386b;
+    height: 30px;
+    text-align: center !important;
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    text-shadow: none !important;
+    line-height: 30px;
+}
+
+/* Dropdown Select Text */
+#ALM-summaryData-content #select-pension-plan-button span,
+.dashb-row.settings-row span,
+.ui-select span {
+	text-align: left !important;
+	color: #ffffff !important;
+	font-weight: 400 !important;
+	font-size: 14px !important;
+	text-shadow: none !important;
+	line-height: 18px;
+}
+.TopPaneldd div.TowColSelect {
+	width: 300px;
+	margin-left: 0px;
+	overflow: hidden;
+	float: left;
+}
+.page-summary-alm #btnPrev,
+.page-summary-alm #btnNext {
+	background: none;
+	border:none !important;
+}
+#ALM-summaryData-content > div.TopPanel > div.UtilityControlsWrap > div.ui-select {
+	margin: 10px 0 2% 0;
+}
+#ddlDateType,
+.page-assetsliabilities-table-chart #ALM-summaryData-content .UtilityControlsWrap > div.TowColSelect .ui-select:nth-child(1) {
+	margin-right: 2%;
+	margin-top: 0 !important;
+}
+#ddlDateType .ui-select,
+#ddlDateRange .ui-select {
+	float: right;
+	margin-top: 0;
+}
+.ui-btn-icon-notext:after, .ui-btn-icon-left:after, .ui-btn-icon-right:after {
+	margin-top: -17px !important;
+}
+#ddlDateType,
+#ddlDateRange,
+.page-assetsliabilities-table-chart #ALM-summaryData-content .UtilityControlsWrap > div.TowColSelect .ui-select,
+#controlsdiv .TowColSelect > .ui-select
+/*.page-assetsliabilities-table-chart select#DateRangeType,
+.page-assetsliabilities-table-chart select#DateType*/ {
+	float: left;
+	width:49%;
+	margin-top: 0;
+}
+#controlsdiv .TowColSelect .ui-select:nth-child(2),
+.page-assetsliabilities-table-chart select#DateRangeType {
+	float: right;
+	border-radius: 0;
+	border: none;
+	height: 30px;
+	overflow: hidden;
+}
+.ui-select div .ui-select {
+	margin: 0;
+}
+.TopPanel div.TowColSelect .ui-select span {
+	text-align: left;
+	color: #ffffff;
+	font-weight: 400;
+	text-shadow: none;
+}
+#idChart, 
+#idTable {
+	display: inline-block;
+}
+
+/* ALM Nav Arrows */
+div.ChartLableLeftRight {
+	background: #00386b;
+	width: 96%;
+	padding: 10px 2%;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+}
+.ChartLableLeftRight .NavArrowLable {
+	text-align: center;
+}
+
+.ChartLableLeftRight a.RightNavArrow {
+	float: right;
+}
+.ChartLableLeftRight a.LeftNavArrow {
+	float: left;
+}
+
+.ChartLableLeftRight .NavArrowLable {
+	margin: 0 auto;
+	position: absolute;
+	width: 50%;
+	margin-left: -25%;
+	left: 50%;
+	text-align: center;
+}
+
+.ChartLableLeftRight .NavArrowLable,
+.ChartLableLeftRight .LeftNavArrow,
+.ChartLableLeftRight .RightNavArrow {
+	display: inline-block !important;
+}
+.ChartLableLeftRight .NavArrowLable,
+.ChartLableLeftRight i.ss-navigateright.NavArrow,
+.ChartLableLeftRight i.ss-navigateleft.NavArrow {
+	color: #ffffff !important;
+	font-size: 14px !important;
+}
+
+
+/* 2 columns */
+#general-settings-default-content .dashb-2col-row.breadcrumbs,
+#ALM-dashboard-default-content .dashb-2col-row.breadcrumbs {
+	height: 60px;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	margin: 0 !important;
+}
+#general-settings-default-content .dashb-2col-row,
+.alm-settings .dashb-2col-row,
+#ALM-dashboard-default-content .dashb-2col-row {
+	color:#737373;
+	clear:both;
+	float:left;
+	font-size: 16px;
+	font-weight: 600;
+	height: 95px;
+	line-height:75px;
+	overflow: hidden;
+	display: inline-block;
+	margin: 10px 0;
+	text-shadow: none;
+}
+
+#general-settings-default-content .dashb-2col-row.settings-row,
+#ALM-dashboard-default-content .dashb-2col-row.settings-row {
+	background:#c4c4c4;
+	color: #737373;
+	height: 75px;
+	display: inline-block;
+	line-height: 75px;
+	padding: 0 2%;
+	width: 96%;
+	margin: 5px 0;
+}
+
+#general-settings-default-content .settings-col2,
+#ALM-dashboard-default-content .settings-col2 {
+	float: right;
+	width: 50px;
+	text-align: center;
+}
+/* Subrows and Default App */
+#general-settings-default-content .defaultapp-row {
+	background:#c4c4c4;
+	height: auto;
+	width: 96%;
+	padding: 0 2% 20px 2%;
+}
+#general-settings-default-content .default-app {
+	display:block;
+	padding:0;
+}
+#general-settings-default-content .defaultapp-row .settings-sub-row {
+	height: 40px;
+	line-height:40px;
+	padding-left:20px;
+	overflow: hidden;
+}
+#general-settings-default-content .defaultapp-row .settings-sub-row .settings-label {
+	font-weight:400;
+}
+#general-settings-default-content .defaultapp-row .settings-sub-row a {
+	color: #737373 !important;
+}
+#general-settings-default-content .defaultapp-row .settings-sub-row a:hover .settings-label {
+	color: #ffffff;
+}
+#general-settings-default-content .defaultapp-row .settings-sub-row a:hover .ss-icon {
+	color: #ff9c00;
+}
+
+/* 3 column row */
+#ALM-dashboard-default-content .dashb-3col-row {
+	clear: both;
+	float: left;
+	height: 95px;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+}
+#ALM-dashboard-default-content .dashb-3col-row span {
+	clear: right;
+	float:left;
+}
+#ALM-dashboard-default-content .appIcon {
+	overflow: hidden;
+	width: 75px;
+	display: inline-block;
+	padding: 10px;
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+}
+#ALM-dashboard-default-content .appTitle {
+	color:#ffffff;
+	height: 95px;
+	display: inline-block;
+	line-height: 95px;
+	padding: 0 0 0 30px;
+	margin: 0;
+	width: 400px;
+}
+#ALM-dashboard-default-content .appArrow {
+	height: 95px;
+	display: inline-block;
+	line-height: 95px;
+	padding: 0;
+	margin: 0;
+	width: 50px;
+	text-align:center;
+}
+#ALM-dashboard-default-content .opaArrow {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* IE 8 */
+  filter: alpha(opacity=30); /* IE 5.5-7 */
+  -moz-opacity: 0.3; /* Netscape */
+  -khtml-opacity: 0.3; /* Safari 1.x */
+  opacity: 0.3; /* Modern browsers */
+  opacity: .3;
+	text-align: center;
+	font-style: normal !important;
+	color: #000000;
+	font-size: 22px;
+	text-shadow: none;	
+}
+#ALM-dashboard-default-content .dashb-3col-row img {
+	width: 100%;
+}
+.ui-page-theme-a .ui-btn, .ui-page-theme-a .ui-btn:hover {
+	background: transparent;
+	height: 40px !important;
+	line-height: 40px !important;
+	padding: 5px !important;
+	box-shadow: none !important;
+}
+
+/* legal notice */
+.dashb-3col-row.legal-row {
+	text-align: right;
+	margin-top: 30px;
+}
+#ALM-dashboard-default-content > div > div.dashb-3col-row.legal-row > a { 
+	color:#0069ad;
+	font-weight: 400 !important; 
+}
+
+#ALM-dashboard-default-content .dashb-3col-row.legal-row .ss-icon {
+	font-size: 20px;
+	color: #8b8b8b;
+	margin: 0 20px 0 5px;
+	position: relative;
+	top: 6px;
+}
+
+/** Settings **/
+.dashb-3col-row.settings-row {
+margin-bottom: 40px;
+}
+.settings-row i {
+	font-size: 32px;
+	font-style: normal;
+	color: #767676;
+}
+.page-alm-settings .settings-row {
+	background: transparent !important;
+}
+#ALM-dashboard-default-content .settings-row,
+#ALM-dashboard-default-content .settings-row .appIcon,
+#ALM-dashboard-default-content .settings-row .appArrow {
+	background: #c4c4c4;
+}
+#ALM-dashboard-default-content .settings-row .appTitle {
+	background: #bcbcbc;
+}
+
+/** ALM **/
+#ALM-dashboard-default-content .dashb-3col-row.ALM-apps-row,
+#ALM-dashboard-default-content .ALM-apps-row .appIcon,
+#ALM-dashboard-default-content .ALM-apps-row .appArrow {
+	background: #10253f;
+}
+#ALM-dashboard-default-content .ALM-apps-row .appTitle {
+	background: #0e1e31;
+}
+/*
+.page-settings #ALM-dashboard-default-content .ALM-apps-row .appIcon,
+.page-settings #ALM-dashboard-default-content .ALM-apps-row .appArrow {
+	background: #456880;
+}
+.page-settings #ALM-dashboard-default-content .ALM-apps-row .appTitle {
+	background: #42637b;
+}
+*/
+
+/** IR **/
+#ALM-dashboard-default-content .dashb-3col-row.IR-apps-row,
+#ALM-dashboard-default-content .IR-apps-row .appIcon,
+#ALM-dashboard-default-content .IR-apps-row .appArrow {
+	background-color: #228685;
+}
+#ALM-dashboard-default-content .IR-apps-row .appTitle {
+	background-color: #1c6d6c;
+}
+/*
+.page-settings #ALM-dashboard-default-content .IR-apps-row .appIcon,
+.page-settings #ALM-dashboard-default-content .IR-apps-row .appArrow {
+	background: #72a5a5;
+}
+.page-settings #ALM-dashboard-default-content .IR-apps-row .appTitle {
+	background: #6e9f9f;
+}
+*/
+
+/** MR **/
+#ALM-dashboard-default-content .dashb-3col-row.MR-apps-row,
+#ALM-dashboard-default-content .MR-apps-row .appIcon,
+#ALM-dashboard-default-content .MR-apps-row .appArrow {
+	background: #606060;
+}
+#ALM-dashboard-default-content .MR-apps-row .appTitle {
+	background: #4e4e4e;
+}
+/*
+.page-settings #ALM-dashboard-default-content .MR-apps-row .appIcon,
+.page-settings #ALM-dashboard-default-content .MR-apps-row .appArrow {
+	background: #929292;
+}
+.page-settings #ALM-dashboard-default-content .MR-apps-row .appTitle {
+	background: #8c8c8c;
+}
+*/
+
+/** PRR **/
+#ALM-dashboard-default-content .dashb-3col-row.PRR-apps-row,
+#ALM-dashboard-default-content .PRR-apps-row .appIcon,
+#ALM-dashboard-default-content .PRR-apps-row .appArrow {
+	background: #809f56;
+}
+#ALM-dashboard-default-content .PRR-apps-row .appTitle {
+	background: #688146;
+}
+/*
+.page-settings #ALM-dashboard-default-content .PRR-apps-row .appIcon,
+.page-settings #ALM-dashboard-default-content .PRR-apps-row .appArrow {
+	background: #a2b38d;
+}
+.page-settings #ALM-dashboard-default-content .PRR-apps-row .appTitle {
+	background: #9cac87;
+}
+*/
+
+/* Tables */
+#summaryTable, #DateNav, .GraphedChart {
+	min-height: 60px;
+	width: 100%;
+}
+#summaryTable, #divChart .table, .GraphedChart, #assetsTable, #divChart .table{
+	clear: both;
+	width: 100%;
+}
+#assetsTable tr.head td {
+	line-height: 20px;
+}
+.GraphedChart img {
+	width: 100%;
+}
+tr.head,
+table thead th a {	
+	background: #00386b !important;
+	color: #ffffff !important;
+}
+
+#summaryTable td,
+#assetsTable td {
+	padding: 0 10px;
+}
+#divChart .table tr:nth-child(odd),
+#assetsTable tr:nth-child(odd),
+tr.manageuserrow:nth-child(odd) {
+	background-color:#e8e8e8; 
+}
+#summaryTable tr:nth-child(even),
+#divChart .table tr:nth-child(even),
+#assetsTable tr:nth-child(even),
+tr.manageuserrow:nth-child(even) { 
+	background-color:#bcbcbc; 
+}
+
+table.table {
+	border-spacing: 0;
+	border-collapse: separate;
+}
+table.table .head th:nth-child(1) {
+	text-align: left;
+}
+table.table th {
+	padding: 1% 2%;
+	line-height: 16px;
+}
+.page-manage-users table.table th {
+	padding: 1% !important;
+}
+table.table .head th:nth-child(2),
+table.table .head th:nth-child(3) {
+	text-align: right;
+}
+table thead th,
+#summaryTable .head,
+#summaryTable .summaryLabel,
+#summaryTable .summaryQty,
+#divChart .table .head,
+#divChart .table .summaryDate,
+#divChart .table .summaryQty,
+#assetsTable .head,
+#assetsTable .summaryDate,
+#assetsTable .summaryQty{
+	text-shadow: none;
+	font-size: 12px;
+	font-weight: 600;
+	line-height:40px;
+	height: 40px;
+	text-transform: capitalize;
+}
+#divChart .table .summaryQty,
+#assetsTable .summaryQty,
+.summarySubHead td,
+tr.heads {
+	text-align: right;
+}
+
+#divChart .table td,
+#assetsTable td,
+.page-manage-users table.table tbody td {
+	padding: 3% 2%;
+}
+
+/* Manage Users */
+.page-manage-users table.table {
+	margin: 20px 0;
+	padding:0;
+	width: 100%;
+}
+
+.page-manage-users table.table th {
+	text-align: left !important;
+}
+
+/* Summary Styles */
+#summaryTable .summaryLabel {
+	text-align: left;
+}
+#summaryTable .summaryQty,
+.summarySubHead td,
+tr.heads {
+	text-align: right;
+}
+
+#summaryTable > tbody > tr.summarySubHead > td {
+	color: #ffffff;
+	font-size:15px !important;
+}
+#summaryTable > tbody > tr:nth-child(4) td {
+	border-bottom: 1px solid #000000;
+}
+#summaryTable > tbody > tr:nth-child(5) td,
+#summaryTable > tbody > tr:nth-child(7) td {
+	height: 120px;
+	vertical-align: top;
+}
+
+#DateNav .NavArrow {
+	color:#606060;
+	width: 50px;
+	text-align: center;
+	height: 75px;
+}
+#DateNav > div.DateLabel {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 10;
+}
+#DateNav .DateMonthly,
+#DateNav .DateLabel {
+	color:#606060;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+}
+#ALM-summaryData-content .TopPanel .TwoColSelect > div:nth-child(1) {
+	margin-right:10px;
+}
+#summaryTable .colHeaders {
+	background: #003867;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+}
+#summaryTable .colHeaders span.col1 {
+	width: 58%;
+	margin-right: 2%;
+}
+#summaryTable .colHeaders span.col2 {
+	width: 38%;
+	margin-right: 2%;
+}
+#summaryTable .colHeaders .col1, 
+#summaryTable .colHeaders .col2,
+#summaryTable .colHeaders .col3 {
+	float: left;
+	color: #fff;
+	padding: 0;
+	text-align: right;
+}
+
+div#divSubscribeMonthly, #divSubscribeDaily, #divSubscribeQuarterly {
+	padding: 2%;
+}
+/* Alt Row */
+#summaryTable .summaryAltRow.SubHeaders .col1 {
+	width: 94% !important;
+	text-align: right;
+	color: #ffffff;
+	font-size: 12px;
+}
+#summaryTable .summaryAltRow .col1,
+#summaryTable .summaryAltRow .col2,
+#summaryTable .summaryAltRow .col3 {
+	float: left;
+	font-weight:600;
+	color:#606060;
+}
+#summaryTable .summaryAltRow .col1 {
+	width: 28%;
+	text-align: left;
+	padding-left:2%;
+}
+#summaryTable .summaryAltRow .col2 {
+	width: 28%;
+	padding-right:2%;
+	text-align: right;
+}
+#summaryTable .summaryAltRow .col3 {
+	width: 37%;
+	text-align: right;
+	padding-right:3%;
+}
+#summaryTable .summaryAltRow {
+	height: 40px;
+	line-height: 40px;
+}
+#summaryTable .summaryAltRow:nth-child(odd) {
+	background-color: #bcbcbc;
+}
+
+/* Summary Popup */
+#customDatePlaceHolder {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding: 0 2%;
+	width: 96%;
+}
+
+/* Interest Styles */
+#DateNav > div.chartTableIcons,
+#divCalendar,
+#DateNav a {
+	z-index: 50;
+	position: relative;
+}
+#DateNav > div.chartTableIcons, #DateNav > div.DateLabel {
+	float: left;
+}
+div#ShowUserLock, 
+div#ShowUserUnLock,
+div#ShowUserDefault {
+	display: inline-block;
+}
+#divChart .table > tbody > tr > td:nth-child(2),
+#divChart .table > tbody > tr > td:nth-child(3),
+#divChart .table > tbody > tr > td:nth-child(4) {
+	border-left: 1px solid #10253f;
+	text-align: right;
+}
+
+/* Daily */
+#daily .StartTxt {
+	float: left;
+	display: block !important;
+	width: 60px;
+	background: #606060;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #cfcfcf;
+	font-weight: 600;
+}
+#daily .StartDatePicker {
+	background: #606060;
+	display: block;
+	width: 100%;
+	height: 40px;
+}
+#daily .ui-input-text,
+.StartDatePicker .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+}
+#daily .ui-input-text, 
+#daily .ui-input-text .datePicker {
+	background: #606060;
+	border:none;
+	color: #ffffff;
+	display: inline-block;
+	margin: 0;
+	height: 40px;
+	line-height: 30px;
+	font-weight: 600;
+	width: 100%;
+}
+
+#daily .DateIcons {
+	width: 50px;
+	display: inline-block;
+	background: #606060;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -5px;
+}
+#daily .CalendarIcon, #daily .ClearIcon {
+	margin: 0 2px;
+	color: #ffffff;
+}
+
+/* old */
+#QMD-selector .QMD-tabs {
+	background: none !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden;
+}
+#QMD-selector {
+	background: transparent;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+#QMD-selector .QMD-tabs li.middle-tab {
+	border-left: 3px solid #ffffff !important;
+	border-right: 3px solid #ffffff !important;
+}
+#QMD-selector .QMD-tabs li {
+	background: none !important;
+	margin: 0 !important;
+	overflow: hidden;
+	height: 50px;
+}
+#QMD-selector .QMD-tabs li a {
+	color: #ffffff !important;
+	width: 97%;
+}
+
+/* Active Hover */
+#QMD-selector .QMD-tabs li.ui-state-active a,
+#QMD-selector .QMD-tabs .ui-state-active:focus,
+#QMD-selector .ui-page-theme-a .ui-btn.ui-btn-active, 
+#QMD-selector .QMD-tabs li.ui-state-active:focus,
+#QMD-selector .QMD-tabs li:hover,
+#QMD-selector .QMD-tabs li:focus {
+	background: none !important;
+	background-color: #ffffff !important;
+	outline: none !important;
+}
+#QMD-selector .QMD-tabs li.ui-state-active,
+#QMD-selector .QMD-tabs li.ui-state-active a, 
+#QMD-selector .QMD-tabs li a:focus,
+#QMD-selector .QMD-tabs li a:hover {
+	color: #606060 !important;
+}
+#QMD-selector .QMD-tabs li.ui-state-active a, 
+#QMD-selector .QMD-tabs li a:focus,
+#QMD-selector .QMD-tabs li a:hover {
+	color: #ffffff !important;
+	background-color: #487395 !important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: none !important;}
+
+/* QMD */
+#QMD-selector .ClearIcon,
+#QMD-selector .CalendarIcon {
+	background: #606060;
+	color: #ffffff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin: 0 !important;
+	padding: 0 5px;
+	position: relative;
+}
+#QMD-selector #quarterly,
+#QMD-selector #monthly,
+#QMD-selector #daily {
+	background: #ffffff !important;
+	padding: 0;
+}
+
+.page-prr-dashboard #ALM-dashboard-default-content .dashb-2col-row.settings-row.disabledRow
+ {
+	background: #678244 !important;
+	color: #606060 !important;
+}
+
+/* responsive date pickers */
+#QMD-selector .StartDatePicker input,
+#StartDatePickerD,
+#EndDatePickerD,
+#select-pension-plan-Start-button,
+#select-pension-plan-End-button,
+.datePickerStart,
+.datePickerEnd,
+.datePicker.hasDatepicker {
+    background-color: #606060 !important;
+    background-size: 40px, 20px !important;
+    background-position: left center, right center !important;
+    background-repeat: no-repeat !important;
+    text-indent: 45px !important;
+    font-size: 14px !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    height: 40px !important;
+    width: 98% !important;
+}
+
+.datePicker.hasDatepicker {
+    background-image: url('/Content/images/pickerDate.png'), url('/Content/images/icon-calendar.png') !important;
+}
+#StartDatePickerM,
+#StartDatePickerD,
+.datePickerStart {
+    background-image: url('/Content/images/pickerStart.png'), url('/Content/images/icon-calendar.png') !important;
+}
+#EndDatePickerM,
+#EndDatePickerD,
+.datePickerEnd {
+    background-image: url('/Content/images/pickerEnd.png'), url('/Content/images/icon-calendar.png') !important;
+}
+#select-pension-plan-Start-button {
+    background-image: url('/Content/images/pickerStart.png'), url('/Content/images/iconDownArrow.png') !important;
+}
+#select-pension-plan-End-button {
+    background-image: url('/Content/images/pickerEnd.png'), url('/Content/images/iconDownArrow.png') !important;
+}
+#quarterly .ui-icon-carat-d:after {
+	background-image: none !important;
+}
+ 
+#QMD-selector .StartDatePicker input,
+#QMD-selector .StartDatePicker div {
+    display: inline-block;
+    margin: 0 !important;
+    width: 99%;
+}
+
+/* Select */
+#QMD-selector .StartDatePickerQ,
+#QMD-selector .StartDatePicker {
+	background: #606060;
+	display: block;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+input#btnCreateChart {
+	margin-top: 40px;
+}
+
+#QMD-selector .StartDatePickerQ .StartTxt {
+	float: left;
+	display: block !important;
+}
+#QMD-selector .StartDatePickerQ select,
+#QMD-selector .StartDatePickerQ > div {
+	background: #606060;
+	display: inline-block;
+	margin: 0;
+	height: 40px;
+	line-height: 30px;
+	font-weight: 600;
+}
+#QMD-selector .StartDatePickerQ div {
+	background: #606060;
+}
+
+#QMD-selector .StartTxt {
+	display: inline-block;
+	width: 60px;
+	background: #606060;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #cfcfcf;
+	font-weight: 600;
+}
+#QMD-selector .StartDatePicker input,
+#QMD-selector .StartDatePicker div {
+	display: inline-block;
+	margin: 0 !important;
+}
+#QMD-selector .StartDatePicker input {
+	border: 0 !important;
+	height: 40px;
+	margin: 0 !important;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#QMD-selector .ChartDisplay {
+	background: #cfcfcf;
+	padding: 15px 25px;
+	margin: 25px 0 0 0;
+	font-weight: 600;
+}
+
+#QMD-selector div#select-pension-plan-Start-button,
+
+#QMD-selector div#select-pension-plan-End-button {
+	height: 30px !important;
+	line-height: 30px !important;
+}
+#QMD-selector div#select-pension-plan-Start-button span,
+#QMD-selector div#select-pension-plan-End-button span {
+	line-height: 30px;
+}
+#QMD-selector div#select-pension-plan-Start-button #select-pension-plan-Start,
+#QMD-selector div#select-pension-plan-End-button #select-pension-plan-End {
+	width: 90%;
+}
+
+
+/***** Side Panel  *****/
+
+/** User Info **/
+.SidePanel-UserInfo date {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.SidePanel-UserInfo {
+	color: #606060;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 5%;
+}
+
+/** App Info **/
+.ui-collapsible-inset, .ui-collapsible-set, .ui-collapsible-set .ui-collapsible {
+	margin: 0 !important;
+}
+#SidePanel .appInfo.ALMInfo > div > div > h3 a {
+	color: #ffffff !important;
+}
+#SidePanel .appInfo.ALMInfo > div > div > h3 > a {
+	height: 34px !important;
+	line-height: 34px;
+	margin: 0;
+	padding: 5% !important;
+	background: #42637b;
+}
+.appInfo.ALMInfo h3 {
+
+}
+.appInfo.ALMInfo .ui-collapsible-content {
+	border: none;
+	margin-top: -10px;
+}
+.appInfo.ALMInfo .ui-listview {
+	margin:0;
+	padding:0;
+}
+.appInfo.ALMInfo .ui-listview li {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0;
+	padding: 5% 0 5% 1%;
+	text-transform: uppercase;
+}
+.appInfo.ALMInfo .ui-listview li .ss-icon {
+	color: #334d60;
+	width: 30px;
+	display: inline-block;
+	margin-right: 4%;
+	text-align: right;
+}
+.ui-collapsible-content.ui-body-inherit, .ui-collapsible-content {
+	padding: 0;
+	margin: 0;
+}
+
+/* Summary */
+#ALM-summaryData-content .OneColSelect {
+	width: 230px;
+}
+.TwoColSelect {
+	width: 565px;
+	overflow: hidden;
+}
+.ui-select select,
+.page-alm-settings select#LiabilityMeasurementID {
+	background: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2212px%22%20height%3D%228px%22%20viewBox%3D%220%200%2012%208%22%20style%3D%22enable-background%3Anew%200%200%2012%208%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2210%2C0%206%2C4%202%2C0%200%2C2%206%2C8%2012%2C2%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat #00386b 97% 10px !important;
+	text-align: left;
+	color: #ffffff;
+	font-weight: 400;
+	text-shadow: none;
+	padding: 0 0 0 5px;
+	font-size: 14px;
+	-webkit-appearance: none !important;
+}
+.page-alm-settings select#LiabilityMeasurementID {
+	width: 100%;
+	outline: 0;
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	height: 32px;
+}
+
+/* 3rd dropdown on AL page */
+.page-assetsliabilities-table-chart select#DateRange {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	height: 3em;
+	max-height: 100%;
+	outline: 0;
+	-webkit-border-radius: inherit;
+	border: none;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.TwoColSelect .ui-select {
+	float:left;
+}
+#ALM-summaryData-content > div.TopPanel > div.TwoColSelect > div:nth-child(2) {
+	margin-left: 10px;
+}
+
+#summaryTable > tbody > tr:nth-child(3) > td:nth-child(3) {
+	width: 200px;
+}
+#summaryTable > tbody > tr:nth-child(3) > td.summaryLabel {
+	width: 300px;
+}
+
+#ALM-summaryData-content .PanelLeft {
+	float: left;
+	min-width: 100px;
+	min-height: 130px;
+}
+#ALM-summaryData-content .PanelRight {
+	float: left;
+	padding-left: 20px;
+}
+
+/* ALM */
+.appInfo.ALMInfo .ui-btn {
+	padding: 10px 0 0 0 !important;
+}
+.ui-icon-plus:after, .ui-icon-minus:after {
+	background-image:none;
+}
+
+.ALMapp {
+	background: #42637b;
+}
+.IRapp a, .MRapp a, .PRRapp a {
+	color: #ffffff !important;
+}
+
+/* IR */
+.IRapp {
+	background: #6e9f9f;
+}
+
+/* MR */
+.MRapp {
+	background: #8c8c8c;
+}
+
+/* PRR */
+.PRRapp {
+	background: #9cac87;
+}
+
+/* Side Panel Menu */
+.SidePanelMenu {
+	margin: 0;
+	padding: 0;
+}
+.SidePanelMenu li {
+	padding: 5%;
+	height: 34px;
+	line-height: 34px;
+}
+.SidePanelMenu li a, .SidePanelMenu li a:hover, .SidePanelMenu li a:visited,
+#SidePanel .appInfo.ALMInfo > div > div > h3 a {
+	color: #606060;
+	font-size: 12px !important;
+}
+.SidePanelMenu .ss-icon {
+	color: #606060;
+	margin: 0 18px 0 0;
+}
+
+.ui-panel-inner h3 .ui-collapsible-heading-toggle:hover {
+	height: auto !important;
+}
+.ui-panel-inner h3 .ui-collapsible-heading-toggle {
+	height: auto !important;
+	margin-top: -7px;
+}
+
+#QuarterlyAllow #QMD-selector .StartDatePickerQ div {
+		background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2212px%22%20height%3D%228px%22%20viewBox%3D%220%200%2012%208%22%20style%3D%22enable-background%3Anew%200%200%2012%208%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2210%2C0%206%2C4%202%2C0%200%2C2%206%2C8%2012%2C2%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E') !important;
+		background-repeat: no-repeat !important;
+		background-position: 0px 0px !important;
+	}
+
+
+/* iPhone 5 max width 320 */
+@media only screen and (max-width : 320px) {
+	.SidePanelMenu li a, .SidePanelMenu li a:hover, .SidePanelMenu li a:visited,
+	#SidePanel .appInfo.ALMInfo > div > div > h3 a {
+		font-size: 12px !important;
+	}
+	#summaryTable .head,
+	#summaryTable .summaryLabel,
+	#summaryTable .summaryQty{
+		font-size: 12px !important;
+	}
+	#assetsTable tr.head td {
+		padding: 3% 1% !important;
+		line-height: 20px !important;
+	}
+	#assetsTable > tbody > tr.head > td:nth-child(1) { width: 70% !important; }
+	#assetsTable > tbody > tr.head > td:nth-child(2),
+	#assetsTable > tbody > tr.head > td:nth-child(3),
+	#assetsTable > tbody > tr.head > td:nth-child(4) { width:10% !important; }
+
+	/* Calendars */
+
+	/*#QMD-selector .StartDatePickerQ div,
+	#QMD-selector .StartDatePicker div {
+		width: 77% !important;
+	}*/
+	#QuarterlyAllow #QMD-selector .StartDatePickerQ div,
+	#QuarterlyAllow #QMD-selector .StartDatePicker div {
+		width: 240px !important;
+	}
+	div#monthpicker_001975586650175557.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+		left: 30px !important;
+	}
+
+	.dashb-row {
+	}
+	.dashb-row .ui-select {
+		overflow: hidden !important;
+	}
+	.ui-btn-icon-left::after, .ui-btn-icon-right::after, .ui-btn-icon-top::after, .ui-btn-icon-bottom::after, .ui-btn-icon-notext::after {
+		width: 100% !important;
+	}
+	label {
+		color: #626161 !important;
+		font-size: 20px !important;
+	}
+	#general-settings-default-content .dashb-2col-row, .alm-settings .dashb-2col-row {
+	}
+	#general-settings-default-content a.ss-icon, .alm-settings a.ss-icon {
+		margin-right: 20px !important;
+	}
+	#general-settings-default-content .clientName {
+		margin-left: 30px !important;
+	}
+
+	#summaryTable .summaryAltRow .col1,
+	#summaryTable .summaryAltRow .col2,
+	#summaryTable .summaryAltRow .col3 {
+		font-size:12px !important;
+	}
+	#daily .ui-input-text {
+		top: 0px;
+		position: relative;
+	}
+	div#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+		left: 36px !important;
+	}
+
+	div#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+		top: 220px !important;
+	}
+}
+
+
+/* Phones max width 360 */
+@media only screen and (min-width : 321px) and (max-width : 650px) {
+	.SidePanelMenu li a, .SidePanelMenu li a:hover, .SidePanelMenu li a:visited,
+	#SidePanel .appInfo.ALMInfo > div > div > h3 a {
+		font-size: 12px !important;
+	}
+	#summaryTable .head,
+	#summaryTable .summaryLabel,
+	#summaryTable .summaryQty{
+		font-size: 12px !important;
+	}
+	#assetsTable tr.head td {
+		padding: 2% 3% !important;
+		line-height: 20px !important;
+	}
+	#assetsTable > tbody > tr.head > td:nth-child(1) { width: 37% !important; }
+	#assetsTable > tbody > tr.head > td:nth-child(2),
+	#assetsTable > tbody > tr.head > td:nth-child(3),
+	#assetsTable > tbody > tr.head > td:nth-child(4) { width:21% !important; }
+
+	/* dropdown */
+
+	/* Calendars */
+	#QMD-selector .ClearIcon,
+	#QMD-selector .CalendarIcon {
+		top: 3px !important;
+	}
+	.page-alm-interest-daily .ui-datepicker {
+		left: 30px !important;
+	}
+	.dashb-row .ui-select {
+		overflow: hidden !important;
+	}
+	.ui-btn-icon-left::after, .ui-btn-icon-right::after, .ui-btn-icon-top::after, .ui-btn-icon-bottom::after, .ui-btn-icon-notext::after {
+		width: 100% !important;
+	}
+	label {
+		color: #626161 !important;
+		font-size: 20px !important;
+	}
+	#general-settings-default-content .dashb-2col-row, .alm-settings .dashb-2col-row {
+	}
+	#general-settings-default-content a.ss-icon, .alm-settings a.ss-icon {
+		margin-right: 20px !important;
+	}
+	#general-settings-default-content .clientName {
+		margin-left: 30px !important;
+	}
+	
+	/* summary table 
+	#summaryTable .colHeaders span.col1 {
+		width: 60% !important;
+	}
+	#summaryTable .colHeaders span.col2 {
+		width: 36% !important;
+		padding-right:2%;
+	}
+	#summaryTable .summaryAltRow.SubHeaders .col1 {
+		width: 300px !important;
+	}
+	#summaryTable .summaryAltRow .col1 {
+		width: 80px !important;
+	}
+	#summaryTable .summaryAltRow .col2 {
+		width: 100px !important;
+	}
+	#summaryTable .summaryAltRow .col3 {
+		width: 120px !important;
+	}
+	*/
+	#summaryTable .summaryAltRow .col1,
+	#summaryTable .summaryAltRow .col2,
+	#summaryTable .summaryAltRow .col3 {
+		font-size:12px !important;
+	}
+	#daily .ui-input-text {
+		width: 98%;
+	}
+	#daily .ui-input-text, .StartDatePicker .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+		width: 98% !important;
+	}
+}
+
