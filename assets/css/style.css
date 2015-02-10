@@ -1,3 +1,6 @@
-.form-control, .form-spacing {
-	margin: 10px 20px 10px 0 !important;
+.navbar-brand .logo {
+	max-width: 100%;
+}
+#form1 {
+	margin-top: 125px;
 }
