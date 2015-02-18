@@ -35,6 +35,8 @@
 					</div>					
 					<telerik:RadButton ID="btnLogin" runat="server" Text="Register" OnClick="btnRegister_Click"></telerik:RadButton>
 					<br />
+					<telerik:RadButton ID="btnResetPassword" runat="server" Text="Reset" OnClick="btnResetPassword_Click"></telerik:RadButton>
+					<br />
 					<asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
 				</div>
 			</div>

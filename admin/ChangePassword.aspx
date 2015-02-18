@@ -10,6 +10,7 @@
 	<telerik:RadTextBox ID="txtCurrentPassword" runat="server" Width="600"></telerik:RadTextBox>
 	<br />
 	<br />
+	<p>Passwords are case sensitive and and must be 8 characters or more</p>
 	<asp:Label ID="lblNewPassword" runat="server" Text="New Password"></asp:Label>
 	<br />
 	<telerik:RadTextBox ID="txtNewPassword" runat="server" Width="600"></telerik:RadTextBox>

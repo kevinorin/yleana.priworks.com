@@ -1,0 +1,60 @@
+.RadComboBox_Telerik {
+  color: black;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadComboBox_Telerik .rcbInputCell,
+  .RadComboBox_Telerik .rcbArrowCell {
+    background-image: url('Common/radFormSprite.png'); }
+  .RadComboBox_Telerik .rcbInput {
+    color: black;
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 16px; }
+  .RadComboBox_Telerik .rcbEmptyMessage {
+    color: #8a8a8a; }
+  .RadComboBox_Telerik .rcbHovered .rcbInput {
+    color: black; }
+  .RadComboBox_Telerik .rcbFocused .rcbInput {
+    color: black; }
+  .RadComboBox_Telerik .rcbReadOnly .rcbInput {
+    color: black; }
+  .RadComboBox_Telerik .rcbHovered .rcbReadOnly .rcbInput {
+    color: black; }
+  .RadComboBox_Telerik .rcbFocused .rcbReadOnly .rcbInput {
+    color: black; }
+
+.RadComboBoxDropDown_Telerik {
+  border-color: #828282;
+  color: black;
+  background: white;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadComboBoxDropDown_Telerik .rcbHeader,
+  .RadComboBoxDropDown_Telerik .rcbFooter {
+    color: black;
+    background-color: #e6e6e6; }
+  .RadComboBoxDropDown_Telerik .rcbHeader {
+    border-bottom-color: #828282; }
+  .RadComboBoxDropDown_Telerik .rcbFooter {
+    border-top-color: #828282; }
+  .RadComboBoxDropDown_Telerik .rcbHovered {
+    color: black;
+    background-color: #9ddf6c; }
+  .RadComboBoxDropDown_Telerik .rcbSelected {
+    color: black;
+    background-color: #63ac39; }
+  .RadComboBoxDropDown_Telerik .rcbLoading {
+    color: black;
+    background-color: #9ddf6c; }
+  .RadComboBoxDropDown_Telerik .rcbItem em {
+    color: black;
+    background-color: #9ddf6c; }
+  .RadComboBoxDropDown_Telerik .rcbCheckAllItems,
+  .RadComboBoxDropDown_Telerik .rcbCheckAllItemsHovered {
+    color: black;
+    background-color: #e6e6e6; }
+  .RadComboBoxDropDown_Telerik .rcbMoreResults {
+    border-color: #828282;
+    color: black;
+    background-color: #e6e6e6; }
+  .RadComboBoxDropDown_Telerik .rcbMoreResults a {
+    border-top-color: black; }

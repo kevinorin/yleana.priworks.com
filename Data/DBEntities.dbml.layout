@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.625, 16.375" name="DataClasses1">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.625, 17" name="DataClasses1">
   <DataContextMoniker Name="/YleanaDataContext" />
   <nestedChildShapes>
     <classShape Id="4146e369-7561-4093-afca-6139c46409aa" absoluteBounds="11.875, 6.625, 2, 1.1939925130208344">
@@ -18,12 +18,6 @@
       <DataClassMoniker Name="/YleanaDataContext/webpages_Membership" />
       <nestedChildShapes>
         <elementListCompartment Id="fad303cc-0779-48fa-be57-ed2d7f44a66f" absoluteBounds="10.64, 8.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="7ff2bb58-868f-4753-840a-686a1f2f8bcc" absoluteBounds="0.75, 1.5, 2, 1.9631982421875003">
-      <DataClassMoniker Name="/YleanaDataContext/TagManagement" />
-      <nestedChildShapes>
-        <elementListCompartment Id="b816eb18-e074-411a-8782-1c06186aec8e" absoluteBounds="0.765, 1.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="242e6692-7450-4663-9cca-97fedebd70bc" absoluteBounds="11.5, 2.75, 2, 1.5785953776041666">
@@ -58,7 +52,7 @@
         <elementListCompartment Id="f87f8fe5-d04d-4a92-9469-0b420da8bdd3" absoluteBounds="8.515, 1.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(10.5 : 3.39505126953125); (11.5 : 3.39505126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(10.5 : 3.39505126953125); (11.1666666666667 : 3.39505126953125 : JumpStart); (11.3333333333333 : 3.39505126953125 : JumpEnd); (11.5 : 3.39505126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/YleanaDataContext/Address/Address_CourseLocation" />
       <nodes>
         <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
@@ -69,12 +63,6 @@
       <DataClassMoniker Name="/YleanaDataContext/PartnerOrgUser" />
       <nestedChildShapes>
         <elementListCompartment Id="63d51571-7aa5-4526-b2d8-27896da0b8f4" absoluteBounds="3.5149999999999997, 9.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="8c34719d-7f25-48fb-88c3-a5859900f82d" absoluteBounds="17.25, 7.625, 2, 1.9631982421875">
-      <DataClassMoniker Name="/YleanaDataContext/ApplicationStatusTracking" />
-      <nestedChildShapes>
-        <elementListCompartment Id="c1328fdf-8557-4e66-9ac3-ddf9d3af6744" absoluteBounds="17.265, 8.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="fa5c65c5-dfce-4e29-9462-5bbdd1d16652" absoluteBounds="17.25, 9.75, 2, 2.1554996744791666">
@@ -102,216 +90,260 @@
         <classShapeMoniker Id="e0738548-8059-44ec-9997-9599a268ea12" />
       </nodes>
     </associationConnector>
-    <classShape Id="b4846092-27b7-453c-a7bf-3e232d621f34" absoluteBounds="0.75, 8.625, 2, 2.3478011067708335">
-      <DataClassMoniker Name="/YleanaDataContext/UserProfile" />
-      <nestedChildShapes>
-        <elementListCompartment Id="05effbb0-7883-4f31-9084-6fe203f01a7d" absoluteBounds="0.76500000000000012, 9.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(2.75 : 10.0681469726562); (3.04166666666667 : 10.0681469726562 : JumpStart); (3.20833333333333 : 10.0681469726562 : JumpEnd); (3.5 : 10.0681469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/UserProfile/UserProfile_PartnerOrgUser" />
-      <nodes>
-        <classShapeMoniker Id="b4846092-27b7-453c-a7bf-3e232d621f34" />
-        <classShapeMoniker Id="bee0b2a6-eff3-4c0b-8f68-3e2ca36b05c2" />
-      </nodes>
-    </associationConnector>
     <classShape Id="73093790-a3aa-4712-8693-c1e379c6fedc" absoluteBounds="14.375, 2.625, 2, 2.5401025390625">
       <DataClassMoniker Name="/YleanaDataContext/SessionInformation" />
       <nestedChildShapes>
         <elementListCompartment Id="4f78a577-cf59-47c6-bab7-2357356f669c" absoluteBounds="14.39, 3.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="5f28b01f-0494-43a7-851c-9887d8192369" absoluteBounds="0.75, 6.125, 2, 2.1554996744791666">
-      <DataClassMoniker Name="/YleanaDataContext/ApplicationDate" />
-      <nestedChildShapes>
-        <elementListCompartment Id="8b3db8a6-11db-40b1-9f5a-bb7a804c2b84" absoluteBounds="0.76500000000000012, 6.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="0920770e-9223-4c77-9d84-5af787ce7b34" absoluteBounds="9.125, 4.375, 2, 1.9631982421875">
-      <DataClassMoniker Name="/YleanaDataContext/ApplicationStatusTracking1" />
-      <nestedChildShapes>
-        <elementListCompartment Id="07642def-6c11-4a6b-bfc9-ff9c6cd9d52b" absoluteBounds="9.14, 4.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="5f75262c-b537-4559-b21b-b81d170fb6ba" absoluteBounds="6.125, 8.75, 2, 6.3861311848958326">
-      <DataClassMoniker Name="/YleanaDataContext/App_EducationalInfo" />
-      <nestedChildShapes>
-        <elementListCompartment Id="93ab78aa-990f-4c74-89e1-babeea227ea9" absoluteBounds="6.14, 9.21, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="3688caab-d825-4e66-992d-3d22324a596f" absoluteBounds="3.25, 11.375, 2, 2.1554996744791666">
-      <DataClassMoniker Name="/YleanaDataContext/App_College_Intrest_Info" />
-      <nestedChildShapes>
-        <elementListCompartment Id="63f13b96-9b54-4fb6-bff8-802ead0de8d6" absoluteBounds="3.265, 11.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="c5b12e4b-504e-434b-81e9-b123cc411b3d" absoluteBounds="3.25, 14, 2, 1.9631982421875">
-      <DataClassMoniker Name="/YleanaDataContext/App_Travel_Camp_Info" />
-      <nestedChildShapes>
-        <elementListCompartment Id="24196bc5-b311-4a25-b3b6-cdbf40b87b90" absoluteBounds="3.265, 14.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="607d463d-b94f-4cf7-86f8-db2bd0ef08db" absoluteBounds="0.75, 11.375, 2, 2.1554996744791666">
-      <DataClassMoniker Name="/YleanaDataContext/App_Session_info" />
-      <nestedChildShapes>
-        <elementListCompartment Id="0dc3fc7e-d78e-470e-82a9-d0cea9a87ef3" absoluteBounds="0.765, 11.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(1.45923076923077 : 13.5304996744792); (1.45923076923077 : 13.7804996744792); (2.05461538461538 : 13.7804996744792); (2.05461538461538 : 13.5304996744792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/App_Session_info/App_Session_info_App_Session_info" />
-      <nodes>
-        <classShapeMoniker Id="607d463d-b94f-4cf7-86f8-db2bd0ef08db" />
-        <classShapeMoniker Id="607d463d-b94f-4cf7-86f8-db2bd0ef08db" />
-      </nodes>
-    </associationConnector>
     <classShape Id="2934768f-3a44-4108-99df-83378a54b7fa" absoluteBounds="8.5, 8.25, 2, 7.9245426432291648">
       <DataClassMoniker Name="/YleanaDataContext/App_StudentScore" />
       <nestedChildShapes>
         <elementListCompartment Id="294cc621-e5f8-41fa-aced-753c723a57b9" absoluteBounds="8.515, 8.71, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="397ec354-0948-4fa0-8dec-db1e0b72fe52" absoluteBounds="6.125, 1.5, 2, 3.6939111328124996">
-      <DataClassMoniker Name="/YleanaDataContext/App_FamilyInfo" />
+    <classShape Id="87a73e8b-6c22-4ddb-bf46-9e109fcbef6c" absoluteBounds="17.375, 7.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/YleanaDataContext/ApplicationStatusTracking" />
       <nestedChildShapes>
-        <elementListCompartment Id="6fd27193-1239-4d4e-a5d3-9fa743776de0" absoluteBounds="6.14, 1.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b3df4c60-4af8-4655-8310-db5f4062d649" absoluteBounds="17.39, 8.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="cbcac379-8cff-4333-ad94-4131c746d567" absoluteBounds="17.375, 0.75, 2, 6.5784326171875">
-      <DataClassMoniker Name="/YleanaDataContext/App_StudentInfo" />
+    <classShape Id="a646581d-fcca-4afe-9d7e-9f85e068760b" absoluteBounds="0.75, 8.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/YleanaDataContext/UserProfile" />
       <nestedChildShapes>
-        <elementListCompartment Id="ec060db7-d3a2-4a47-a454-27fb2bdf2c76" absoluteBounds="17.39, 1.21, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="27198123-32a0-4100-b18f-8b4101ee1ded" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(10.5 : 2.03125); (17.375 : 2.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/Address/Address_App_StudentInfo" />
+    <associationConnector edgePoints="[(2.75 : 10.0681469726562); (3.5 : 10.0681469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/UserProfile/UserProfile_PartnerOrgUser" />
       <nodes>
-        <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
-        <classShapeMoniker Id="cbcac379-8cff-4333-ad94-4131c746d567" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(10.5 : 2.359375); (17.375 : 2.359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/Address/Address_App_StudentInfo1" />
-      <nodes>
-        <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
-        <classShapeMoniker Id="cbcac379-8cff-4333-ad94-4131c746d567" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="9f5a98f4-16ad-49fc-856d-6c2197a523f6" absoluteBounds="15, 5.375, 2, 3.5016097005208326">
-      <DataClassMoniker Name="/YleanaDataContext/PartnerOrganization" />
-      <nestedChildShapes>
-        <elementListCompartment Id="e5e377ff-5bd8-478b-9667-3ca9c2de5b47" absoluteBounds="15.015, 5.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(15 : 8.09375); (14.2083333333333 : 8.09375 : JumpStart); (14.0416666666667 : 8.09375 : JumpEnd); (12.3333333333333 : 8.09375 : JumpStart); (12.1666666666667 : 8.09375 : JumpEnd); (8.42708333333333 : 8.09375 : JumpStart); (8.26041666666667 : 8.09375 : JumpEnd); (7.20833333333333 : 8.09375 : JumpStart); (7.04166666666667 : 8.09375 : JumpEnd); (5.40625 : 8.09375); (5.40625 : 9.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/PartnerOrganization/PartnerOrganization_PartnerOrgUser" />
-      <nodes>
-        <classShapeMoniker Id="9f5a98f4-16ad-49fc-856d-6c2197a523f6" />
+        <classShapeMoniker Id="a646581d-fcca-4afe-9d7e-9f85e068760b" />
         <classShapeMoniker Id="bee0b2a6-eff3-4c0b-8f68-3e2ca36b05c2" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(16 : 8.87660970052083); (16 : 11.3181469726562); (14.875 : 11.3181469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/PartnerOrganization/PartnerOrganization_PartnerOrgLocation" />
-      <nodes>
-        <classShapeMoniker Id="9f5a98f4-16ad-49fc-856d-6c2197a523f6" />
-        <classShapeMoniker Id="e0738548-8059-44ec-9997-9599a268ea12" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(10.5 : 1.7343725); (16.71875 : 1.7343725); (16.71875 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/Address/Address_PartnerOrganization" />
-      <nodes>
-        <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
-        <classShapeMoniker Id="9f5a98f4-16ad-49fc-856d-6c2197a523f6" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" absoluteBounds="3.5, 1.375, 2, 5.8092268880208326">
-      <DataClassMoniker Name="/YleanaDataContext/StudentApplication" />
+    <classShape Id="6c0f2683-e966-475f-9c28-d0433124fc22" absoluteBounds="3.5, 11.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/YleanaDataContext/App_College_Intrest_Info" />
       <nestedChildShapes>
-        <elementListCompartment Id="5232170e-6ab7-46a7-8a7a-c15b54175f49" absoluteBounds="3.515, 1.835, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6b3a7557-deb9-4d99-a1d6-6995aa786084" absoluteBounds="3.515, 11.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.5 : 7.15037973417468); (5.65884715384615 : 7.30922688802083); (7.125 : 7.30922688802083); (7.125 : 8.75)]" fixedFrom="NotFixed" fixedTo="Algorithm">
-      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_EducationalInfo" />
+    <classShape Id="d876023c-5136-4b9f-8c29-fdbc4a5ab85f" absoluteBounds="5.75, 1.5, 2, 5.4246240234375">
+      <DataClassMoniker Name="/YleanaDataContext/App_FamilyInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02258dc3-e4b2-4ef3-a27c-98b119a6dafb" absoluteBounds="5.765, 1.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.5 : 2.77005126953125); (7.75 : 2.77005126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/Address/Address_App_FamilyInfo" />
       <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-        <classShapeMoniker Id="5f75262c-b537-4559-b21b-b81d170fb6ba" />
+        <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
+        <classShapeMoniker Id="d876023c-5136-4b9f-8c29-fdbc4a5ab85f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(4.4531255 : 7.18422688802083); (4.4531255 : 9.125); (5.32291666666667 : 9.125 : JumpStart); (5.48958333333333 : 9.125 : JumpEnd); (5.75 : 9.125); (5.75 : 12.4527498372396); (5.25 : 12.4527498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_College_Intrest_Info" />
+    <classShape Id="2b1be4a6-5669-4563-94b9-aee70b231945" absoluteBounds="0.75, 11.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/YleanaDataContext/App_Session_info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c920098-b1ac-4021-92e5-ffd7d11df18f" absoluteBounds="0.765, 11.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="448bb186-ae8d-41a3-9810-6e3d7918f8d7" absoluteBounds="17.375, 1.5, 2, 4.2708154296875">
+      <DataClassMoniker Name="/YleanaDataContext/App_StudentInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bca94804-6620-41f5-8932-fc990faaa228" absoluteBounds="17.39, 1.96, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.5 : 2.359375); (16.6354166666667 : 2.359375 : JumpStart); (16.8020833333333 : 2.359375 : JumpEnd); (17.375 : 2.359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/Address/Address_App_StudentInfo" />
       <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-        <classShapeMoniker Id="3688caab-d825-4e66-992d-3d22324a596f" />
+        <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
+        <classShapeMoniker Id="448bb186-ae8d-41a3-9810-6e3d7918f8d7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.94531075 : 7.18422688802083); (3.94531075 : 8.875); (4.36979216666667 : 8.875 : JumpStart); (4.53645883333333 : 8.875 : JumpEnd); (5.32291666666667 : 8.875 : JumpStart); (5.48958333333333 : 8.875 : JumpEnd); (5.875 : 8.875); (5.875 : 14.9815991210937); (5.25 : 14.9815991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_Travel_Camp_Info" />
-      <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-        <classShapeMoniker Id="c5b12e4b-504e-434b-81e9-b123cc411b3d" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(3.50153746153846 : 7.18422688802083); (3.37142556509888 : 7.31433878446042 : JumpStart); (3.25357443490112 : 7.43218991465817 : JumpEnd); (3.125 : 7.56076434955929); (3.125 : 11.0015374615385); (2.75 : 11.3765374615385)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_Session_info" />
-      <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-        <classShapeMoniker Id="607d463d-b94f-4cf7-86f8-db2bd0ef08db" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.46769230769231 : 7.18422688802083); (5.875 : 7.59153458032853); (5.875 : 7.625); (7.04166666666667 : 7.625 : JumpStart); (7.20833333333333 : 7.625 : JumpEnd); (7.875 : 7.625); (8.5 : 8.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <classShape Id="7c5473f9-e40b-40b6-81b5-319201a991a2" absoluteBounds="3.5, 14, 2, 1.9631982421875">
+      <DataClassMoniker Name="/YleanaDataContext/App_Travel_Camp_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e251a90-b212-45e5-bf5b-c94fc8887d6c" absoluteBounds="3.515, 14.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1946528d-556d-47ba-9035-c57135b8222d" absoluteBounds="6, 8.625, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/YleanaDataContext/App_EducationalInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a2c18ce-f686-4eaa-aaab-2d094893e02e" absoluteBounds="6.015, 9.085, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5aa8cd90-4bf9-4414-9253-b4e7be6bbe87" absoluteBounds="8.625, 4.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/YleanaDataContext/ApplicationActionsTracking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fb172b0-9356-4fbd-a266-ffa0c9d05fee" absoluteBounds="8.64, 4.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fa2e536-683d-4bd9-b603-53095eeeea36" absoluteBounds="10.75, 12.5, 2, 4.2708154296875">
+      <DataClassMoniker Name="/YleanaDataContext/App_RoomMate_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="857a4f09-faba-4a2a-9a48-b99de078de93" absoluteBounds="10.765, 12.96, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" absoluteBounds="3.375, 1.625, 2, 6.1938297526041657">
+      <DataClassMoniker Name="/YleanaDataContext/StudentApplication" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b6168ba-2a89-459e-8787-769b9b720b0f" absoluteBounds="3.3899999999999997, 2.085, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.906252 : 7.81882975260417); (4.906252 : 8.40625); (5.38541666666667 : 8.40625 : JumpStart); (5.55208333333333 : 8.40625 : JumpEnd); (8.5 : 8.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_StudentScore" />
       <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
         <classShapeMoniker Id="2934768f-3a44-4108-99df-83378a54b7fa" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 3.34695556640625); (6.125 : 3.34695556640625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.507813 : 7.81882975260417); (4.507813 : 9.125); (3.97395858333333 : 9.125 : JumpStart); (3.80729191666667 : 9.125 : JumpEnd); (3.48958383333333 : 9.125 : JumpStart); (3.30729191666667 : 9.125 : JumpEnd); (3.25 : 9.125); (3.25 : 12.4527498372396); (3.30729191666667 : 12.4527498372396 : JumpStart); (3.48958383333333 : 12.4527498372396 : JumpEnd); (3.5 : 12.4527498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_College_Intrest_Info" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="6c0f2683-e966-475f-9c28-d0433124fc22" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.375 : 4.27481201171875); (5.75 : 4.27481201171875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_FamilyInfo" />
       <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-        <classShapeMoniker Id="397ec354-0948-4fa0-8dec-db1e0b72fe52" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="d876023c-5136-4b9f-8c29-fdbc4a5ab85f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 1.40625); (17.375 : 1.40625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.4062505 : 7.81882975260417); (3.4062505 : 13.6242496744792); (3.08333333333333 : 13.6242496744792 : JumpStart); (2.91666666666667 : 13.6242496744792 : JumpEnd); (2.75 : 13.6242496744792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_Session_info" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="2b1be4a6-5669-4563-94b9-aee70b231945" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.132812625 : 7.81882975260417); (4.132812625 : 7.88132975260417); (8.375 : 7.88132975260417); (8.375 : 4.25); (11.25 : 4.25); (11.25 : 2.5); (16.6354166666667 : 2.5 : JumpStart); (16.8020833333333 : 2.5 : JumpEnd); (17 : 2.5); (17 : 3.63540771484375); (17.375 : 3.63540771484375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_StudentInfo" />
       <nodes>
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-        <classShapeMoniker Id="cbcac379-8cff-4333-ad94-4131c746d567" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="448bb186-ae8d-41a3-9810-6e3d7918f8d7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 5.03929768880208); (3.22916666666667 : 5.03929768880208 : JumpStart); (3.39583333333333 : 5.03929768880208 : JumpEnd); (3.5 : 5.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.89062525 : 7.81882975260417); (3.89062525 : 9.25); (3 : 9.25); (3 : 14.9815991210937); (3.5 : 14.9815991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_Travel_Camp_Info" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="7c5473f9-e40b-40b6-81b5-319201a991a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.4062505 : 7.81882975260417); (3.4062505 : 11.0681469726562); (6 : 11.0681469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_EducationalInfo" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="1946528d-556d-47ba-9035-c57135b8222d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.39062525 : 7.81882975260417); (3.39062525 : 16.5039290364583); (10.75 : 16.5039290364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_RoomMate_Info" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="3fa2e536-683d-4bd9-b603-53095eeeea36" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.03929768880208); (3.375 : 5.03929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/YleanaDataContext/ApplicationStatusList/ApplicationStatusList_StudentApplication" />
       <nodes>
         <classShapeMoniker Id="c3634a22-8f9e-4736-90c8-79cb4af6c2ef" />
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.65625 : 4.32859537760417); (11.65625 : 6.48159912109375); (5.5 : 6.48159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(12.5 : 4.32859537760417); (12.5 : 4.4375); (8.45833333333333 : 4.4375 : JumpStart); (8.29166666666667 : 4.4375 : JumpEnd); (7.8125 : 4.4375); (7.8125 : 6.9871240234375); (5.77083333333333 : 6.9871240234375 : JumpStart); (5.60416666666667 : 6.9871240234375 : JumpEnd); (5.46875 : 6.9871240234375); (5.46875 : 6.07807288216146); (5.375 : 6.07807288216146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/YleanaDataContext/CourseLocation/CourseLocation_StudentApplication" />
       <nodes>
         <classShapeMoniker Id="242e6692-7450-4663-9cca-97fedebd70bc" />
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(15 : 7.95636875651042); (14.2083333333333 : 7.95636875651042 : JumpStart); (14.0416666666667 : 7.95636875651042 : JumpEnd); (12.3333333333333 : 7.95636875651042 : JumpStart); (12.1666666666667 : 7.95636875651042 : JumpEnd); (8.28970208984375 : 7.95636875651042 : JumpStart); (8.12303542317708 : 7.95636875651042 : JumpEnd); (7.20833333333333 : 7.95636875651042 : JumpStart); (7.04166666666667 : 7.95636875651042 : JumpEnd); (4.96094025 : 7.95636875651042); (4.96094025 : 7.18422688802083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/YleanaDataContext/PartnerOrganization/PartnerOrganization_StudentApplication" />
-      <nodes>
-        <classShapeMoniker Id="9f5a98f4-16ad-49fc-856d-6c2197a523f6" />
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(14.125 : 8.875); (14.125 : 6.51285162109375); (5.5 : 6.51285162109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(12.875 : 9.56814697265625); (12.75 : 9.56814697265625); (12.75 : 8.1875); (5.55208333333333 : 8.1875 : JumpStart); (5.38541666666667 : 8.1875 : JumpEnd); (5.171878 : 8.1875); (5.171878 : 7.81882975260417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/YleanaDataContext/PartnerOrgLocationList/PartnerOrgLocationList_StudentApplication" />
       <nodes>
         <classShapeMoniker Id="8f2423e9-b696-485e-aef5-08779e818d78" />
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 8.68807592307692); (3.06607443490112 : 8.3720014881758 : JumpStart); (3.18392556509888 : 8.25415035797804 : JumpEnd); (3.3125 : 8.12557592307692); (3.3125 : 3.17589684440104); (3.5 : 3.17589684440104)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 9); (3.04166666666667 : 9 : JumpStart); (3.20833333333333 : 9 : JumpEnd); (3.30729191666667 : 9 : JumpStart); (3.48958383333333 : 9 : JumpEnd); (3.648437875 : 9); (3.648437875 : 7.81882975260417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/YleanaDataContext/UserProfile/UserProfile_StudentApplication" />
       <nodes>
-        <classShapeMoniker Id="b4846092-27b7-453c-a7bf-3e232d621f34" />
-        <classShapeMoniker Id="58cb342c-ae6e-4920-a047-2558b66b8eb8" />
+        <classShapeMoniker Id="a646581d-fcca-4afe-9d7e-9f85e068760b" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
       </nodes>
     </associationConnector>
+    <classShape Id="92afa44b-12a7-4c75-a8bb-7de5d12a5846" absoluteBounds="0.75, 6.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/YleanaDataContext/ApplicationDate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="380784ba-89e2-4d3d-8045-64fdc0d60c40" absoluteBounds="0.765, 6.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f2ca011-d76b-4a4c-9397-6bd966f28793" absoluteBounds="0.75, 14, 2, 1.9631982421875">
+      <DataClassMoniker Name="/YleanaDataContext/App_PartnerOrgInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17035fdd-d9fb-400b-aaac-5f9245b8731b" absoluteBounds="0.765, 14.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 7.81882975260417); (4.375 : 8.875); (3.97395858333333 : 8.875 : JumpStart); (3.80729191666667 : 8.875 : JumpEnd); (3.48958383333333 : 8.875 : JumpStart); (3.30729191666667 : 8.875 : JumpEnd); (3.125 : 8.875); (3.125 : 14.4908000605469); (3.08333333333333 : 14.4908000605469 : JumpStart); (2.91666666666667 : 14.4908000605469 : JumpEnd); (2.75 : 14.4908000605469)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_PartnerOrgInfo" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="0f2ca011-d76b-4a4c-9397-6bd966f28793" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="25c93177-1b0f-458f-9c70-5ab9e6741fb3" absoluteBounds="15.125, 5.375, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/YleanaDataContext/PartnerOrganization" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbe9af90-63f0-4bf7-b135-db2b514eacd1" absoluteBounds="15.14, 5.835, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.125 : 8.06566487630209); (15.0208333333333 : 8.06566487630209 : JumpStart); (14.8541666666667 : 8.06566487630209 : JumpEnd); (12.3333333333333 : 8.06566487630209 : JumpStart); (12.1666666666667 : 8.06566487630209 : JumpEnd); (5.46875 : 8.06566487630209); (5.46875 : 9.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/PartnerOrganization/PartnerOrganization_PartnerOrgUser" />
+      <nodes>
+        <classShapeMoniker Id="25c93177-1b0f-458f-9c70-5ab9e6741fb3" />
+        <classShapeMoniker Id="bee0b2a6-eff3-4c0b-8f68-3e2ca36b05c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.125 : 9.26121256510417); (16.125 : 11.3181469726562); (14.875 : 11.3181469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/PartnerOrganization/PartnerOrganization_PartnerOrgLocation" />
+      <nodes>
+        <classShapeMoniker Id="25c93177-1b0f-458f-9c70-5ab9e6741fb3" />
+        <classShapeMoniker Id="e0738548-8059-44ec-9997-9599a268ea12" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.125 : 8.09691737630208); (15.0208333333333 : 8.09691737630208 : JumpStart); (14.8541666666667 : 8.09691737630208 : JumpEnd); (12.3333333333333 : 8.09691737630208 : JumpStart); (12.1666666666667 : 8.09691737630208 : JumpEnd); (5.25521133333333 : 8.09691737630208 : JumpStart); (5.08854466666667 : 8.09691737630208 : JumpEnd); (4.98958533333333 : 8.09691737630208 : JumpStart); (4.82291866666667 : 8.09691737630208 : JumpEnd); (4.640626 : 8.09691737630208); (4.640626 : 7.81882975260417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/PartnerOrganization/PartnerOrganization_StudentApplication" />
+      <nodes>
+        <classShapeMoniker Id="25c93177-1b0f-458f-9c70-5ab9e6741fb3" />
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.5 : 1.898435); (16.71875 : 1.898435); (16.71875 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/YleanaDataContext/Address/Address_PartnerOrganization" />
+      <nodes>
+        <classShapeMoniker Id="ce08302e-a36b-43b9-a23f-ddb41fee23ab" />
+        <classShapeMoniker Id="25c93177-1b0f-458f-9c70-5ab9e6741fb3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="17f825e7-f6b8-42b7-9055-79357f7178d7" absoluteBounds="13.25, 12.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/YleanaDataContext/App_Dietary_Allergies_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8f88f17-c558-4889-86ff-f119436bbfb0" absoluteBounds="13.265, 13.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 2.91865400585938); (5.6875 : 2.91865400585938); (5.6875 : 7.88149251302083); (14.9375 : 7.88149251302083); (14.9375 : 12.53125); (14.25 : 12.53125); (14.25 : 12.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/YleanaDataContext/StudentApplication/StudentApplication_App_Dietary_Allergies_Info" />
+      <nodes>
+        <classShapeMoniker Id="eb9c8a79-4404-4a95-bb3a-51699aa86f69" />
+        <classShapeMoniker Id="17f825e7-f6b8-42b7-9055-79357f7178d7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a61dc9c4-9f2c-420b-afd2-c964f84f06d5" absoluteBounds="1.125, 1.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/YleanaDataContext/TagManagement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0cf0ad0-b83e-4c99-947e-c0ae35224301" absoluteBounds="1.1400000000000001, 1.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

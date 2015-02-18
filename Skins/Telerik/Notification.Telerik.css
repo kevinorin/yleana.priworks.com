@@ -1,0 +1,20 @@
+.RadNotification_Telerik {
+  border-color: #8e8e8e;
+  color: #000000;
+  background-color: #ffffff;
+  /* base style overwrites */ }
+  .RadNotification_Telerik.rnShadows {
+    box-shadow: 2px 2px 3px #b8b7b7; }
+  .RadNotification_Telerik .rnTitleBar {
+    border-bottom-color: transparent;
+    background-image: linear-gradient(#fcfbfb, #e6e6e6);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfbfb', endColorstr='#e6e6e6',GradientType=0 ); }
+  .RadNotification_Telerik .rnCommands a {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadNotification_Telerik .rnTitleBarTitle {
+    color: #000000; }
+  .RadNotification_Telerik .rnContentWrapper {
+    border-top-color: #8e8e8e; }
+  .RadNotification_Telerik .rnCommands {
+    margin: 0.16667em 0em 0em; }
+

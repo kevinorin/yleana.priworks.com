@@ -25,7 +25,7 @@
 		<form id="form1" runat="server" defaultbutton="btnLogin">
 			<telerik:RadScriptManager ID="RadScriptManager1" runat="server" />
 			<div>
-				<h1 style="font-weight: 600; font-style: italic; text-align: center; margin: 10px 0 20px;">Administrator Login</h1>
+				<h1 style="font-weight: 600; font-style: italic; text-align: center; margin: 10px 0 20px;">Administrator Login</h1>				
 				<label class="TextBoxInput">User ID</label>
 				<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
 				<telerik:RadTextBox ID="txtUserId" runat="server"></telerik:RadTextBox>
