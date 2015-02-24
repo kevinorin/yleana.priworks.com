@@ -24,25 +24,25 @@
 		}
 		function ShowGPA() {
 			var raddropdownlist = $find('<%=ddlGPA.ClientID %>');
-        	var selecteditem = raddropdownlist.get_selectedItem().get_value();
-        	if (selecteditem == "Other") {
-        		$('#divGPA').show();
-        	}
-        	else {
-        		$('#divGPA').hide();
-        	}
-        }
-        function ShowTest() {
-        	//alert($('#<%=rbtExtendedTimeStandardised.ClientID %> input:checked').val());
-        	if ($('#<%=rbtExtendedTimeStandardised.ClientID %> input:checked').val() == "Yes") {
-        		$('#divExtendedTest').show();
-        	}
-        	else {
-        		$('#divExtendedTest').hide();
-        	}
-        }
-        function ShowExtendedSchool() {
-        	if ($('#<%=rbtExtendedSchool.ClientID %> input:checked').val() == "Yes") {
+			var selecteditem = raddropdownlist.get_selectedItem().get_value();
+			if (selecteditem == "Other") {
+				$('#divGPA').show();
+			}
+			else {
+				$('#divGPA').hide();
+			}
+		}
+		function ShowTest() {
+			//alert($('#<%=rbtExtendedTimeStandardised.ClientID %> input:checked').val());
+			if ($('#<%=rbtExtendedTimeStandardised.ClientID %> input:checked').val() == "Yes") {
+				$('#divExtendedTest').show();
+			}
+			else {
+				$('#divExtendedTest').hide();
+			}
+		}
+		function ShowExtendedSchool() {
+			if ($('#<%=rbtExtendedSchool.ClientID %> input:checked').val() == "Yes") {
         		$('#divExtendedSchool').show();
         	}
         	else {
@@ -74,16 +74,16 @@
         	}
         }
         function numberOnly(sender, eventArgs) {
-            var k = eventArgs.get_keyCode()
-            if (k == 46 || k == 8) {
-                // let it happen, don't do anything
-            }
-            else {
-                // Ensure that it is a number and stop the keypress
-                if (k < 48 || k > 57) {
-                    eventArgs.set_cancel(true);
-                }
-            }
+        	var k = eventArgs.get_keyCode()
+        	if (k == 46 || k == 8) {
+        		// let it happen, don't do anything
+        	}
+        	else {
+        		// Ensure that it is a number and stop the keypress
+        		if (k < 48 || k > 57) {
+        			eventArgs.set_cancel(true);
+        		}
+        	}
         }
 
 	</script>
@@ -94,17 +94,15 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-3">
 					<h1>Educational Info</h1>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label><span style="color: red;">*</span> What is the name of the high school that you currently attend? </label>
 						</div>
 						<div class="col-md-8">
 							<telerik:RadTextBox ID="txtSchoolName" runat="server" MaxLength="50"></telerik:RadTextBox><br />
-							<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" Display="Dynamic" ControlToValidate="txtSchoolName" ErrorMessage="The School Name can not be empty!"></asp:RequiredFieldValidator>
+							<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" Display="Dynamic" ControlToValidate="txtSchoolName" ErrorMessage="School Name cannot be empty!"></asp:RequiredFieldValidator>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label><span style="color: red;">*</span> In what year do you expect to graduate? </label>
@@ -112,14 +110,13 @@
 						<div class="col-md-8">
 							<telerik:RadDropDownList runat="server" ID="ddlGraduationYear" DefaultMessage="Select Year" OnClientSelectedIndexChanged="ShowGraduationYear">
 							</telerik:RadDropDownList>
-							<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ForeColor="Red" Display="Dynamic" ControlToValidate="ddlGraduationYear" ErrorMessage="The Graduation Year can not be empty!"></asp:RequiredFieldValidator>
+							<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ForeColor="Red" Display="Dynamic" ControlToValidate="ddlGraduationYear" ErrorMessage="Graduation Year cannot be empty!"></asp:RequiredFieldValidator>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div id="divGraduYear" style="display: none;">
 							<div class="col-md-4">
-								<label>Fill your Graduation Year :</label>
+								<label>Fill your Graduation Year:</label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadTextBox ID="txtGraduationYear" runat="server" MaxLength="4">
@@ -128,7 +125,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label><span style="color: red;">*</span> Do you qualify for free/reduced lunch? </label>
@@ -141,7 +137,6 @@
 							<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ForeColor="Red" Display="Dynamic" ControlToValidate="rboLunch" ErrorMessage="Please select the Free/Reduced lunch options!"></asp:RequiredFieldValidator>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-12">
 							<p>(Please select "Other" if you attend an IB school and enter it in the box below.)</p>
@@ -168,14 +163,13 @@
 
 						<div id="divGPA" style="display: none;">
 							<div class="col-md-4">
-								<label>Fill your GPA : </label>
+								<label>Fill your GPA: </label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadTextBox ID="txtGPA" runat="server" MaxLength="50"></telerik:RadTextBox><br />
 							</div>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label>Do you currently have extended time or any accommodations on any standardized test? </label>
@@ -189,7 +183,7 @@
 
 						<div id="divExtendedTest" style="display: none;">
 							<div class="col-md-4">
-								<label class="LabelInput">Select the test : </label>
+								<label class="LabelInput">Select the test: </label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadDropDownList ID="ddlextendedtest" runat="server">
@@ -200,16 +194,15 @@
 									</Items>
 								</telerik:RadDropDownList>
 							</div>
-						    <div class="col-md-4">
-							    <label>Please describe these accommodations : </label>
-						    </div>
-						    <div class="col-md-8">
-							    <telerik:RadTextBox ID="txtExtendedTimeStandardisedText" runat="server" MaxLength="250" TextMode="MultiLine" Rows="5"></telerik:RadTextBox><br />
-						    </div>
-	                    </div>
-                    </div>
-
-                    <div class="row spacedRow">
+							<div class="col-md-4">
+								<label>Please describe these accommodations: </label>
+							</div>
+							<div class="col-md-8">
+								<telerik:RadTextBox ID="txtExtendedTimeStandardisedText" runat="server" MaxLength="250" TextMode="MultiLine" Rows="5"></telerik:RadTextBox><br />
+							</div>
+						</div>
+					</div>
+					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label>Do you currently have extended time or any accommodations while at school?  </label>
 						</div>
@@ -222,14 +215,13 @@
 
 						<div id="divExtendedSchool" style="display: none;">
 							<div class="col-md-4">
-								<label>Please describe these accommodations : </label>
+								<label>Please describe these accommodations: </label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadTextBox ID="txtExtendedSchoolText" runat="server" MaxLength="250" TextMode="MultiLine" Rows="5"></telerik:RadTextBox><br />
 							</div>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label>Does anyone ever read your tests out loud to you in school or write down your answers for you? </label>
@@ -241,7 +233,6 @@
 							</asp:RadioButtonList>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-12">
 							<h1>SAT Info</h1>
@@ -261,14 +252,13 @@
 						</div>
 						<div id="divSATPrepare" style="display: none;">
 							<div class="col-md-4">
-								<label>Fill your SAT Preparation details : </label>
+								<label>Fill your SAT Preparation details: </label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadTextBox ID="txtSATPrepare" runat="server" MaxLength="250" TextMode="MultiLine" Rows="5"></telerik:RadTextBox><br />
 							</div>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label><span style="color: red;">*</span> Have you taken an official (College Board administered) SAT exam? </label>
@@ -283,7 +273,7 @@
 
 						<div id="divOfficialSATScore" style="display: none;">
 							<div class="col-md-4">
-								<label>Fill your SAT score : </label>
+								<label>Fill your SAT score: </label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadTextBox ID="txtSATTotal" runat="server" EmptyMessage="SAT Total Score" MaxLength="4">
@@ -301,7 +291,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="row spacedRow">
 						<div class="col-md-4">
 							<label>Have you taken a practice SAT exam, either at your school, at home or somewhere else? </label>
@@ -316,7 +305,7 @@
 
 						<div id="divPracticeSATScore" style="display: none;">
 							<div class="col-md-4">
-								<label>Fill your SAT score : </label>
+								<label>Fill your SAT score: </label>
 							</div>
 							<div class="col-md-8">
 								<telerik:RadTextBox ID="txtPracticeSATScore" runat="server" EmptyMessage="SAT Total Score" MaxLength="4">
@@ -331,7 +320,6 @@
 								<telerik:RadTextBox ID="txtPracticeSATMath" runat="server" EmptyMessage="Math Score" MaxLength="4">
 									<ClientEvents OnKeyPress="numberOnly" />
 								</telerik:RadTextBox><br />
-
 							</div>
 						</div>
 					</div>
@@ -344,30 +332,30 @@
 							<telerik:RadTextBox ID="txtOtherStandardTests" runat="server" MaxLength="250" TextMode="MultiLine" Width="200" Rows="5"></telerik:RadTextBox><br />
 						</div>
 					</div>
-					
-                </div>
+
+				</div>
 			</div>
-            
+
 		</div>
 	</asp:Panel>
-    <div class="rspForms col-lg-12">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-3">
-                <div class="col-md-12">
+	<div class="rspForms col-lg-12">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-3">
+				<div class="col-md-12">
 					<asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label><br />
-					<telerik:RadButton ID="btnPrevious" runat="server" CausesValidation="false" ButtonType="StandardButton" Text="Previous" Width="20%" OnClick="btnPrevious_Click"></telerik:RadButton>
+					<telerik:RadButton ID="btnPrevious" runat="server" CausesValidation="false" ButtonType="StandardButton" Text="PREVIOUS" Width="20%" OnClick="btnPrevious_Click"></telerik:RadButton>
 					<telerik:RadButton ID="btnSave" runat="server" CausesValidation="false" ButtonType="StandardButton" Text="SAVE SECTION" Width="20%" OnClick="btnSave_Click"></telerik:RadButton>
 					<telerik:RadButton ID="btnSaveNext" runat="server" CausesValidation="false" ButtonType="StandardButton" Text="SAVE & NEXT" Width="20%" OnClick="btnSaveNext_Click"></telerik:RadButton>
 					<telerik:RadButton ID="btnNext" runat="server" CausesValidation="false" ButtonType="StandardButton" Text="NEXT" Width="20%" OnClick="btnNext_Click"></telerik:RadButton>
 				</div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-3">
-                        <div class="col-md-4">
-                            <label class="LabelInput">Step 3 of 5</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-3">
+						<div class="col-md-4">
+							<label class="LabelInput">Step 3 of 5</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </asp:Content>

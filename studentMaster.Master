@@ -1,84 +1,103 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentMaster.Master.cs" Inherits="yleana.studentMaster" %>
+
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="Telerik" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Yleana Application</title>
-    <script src="Scripts/jquery-2.1.3.min.js"></script>
+	<title>Yleana Application</title>
+	<script src="Scripts/jquery-2.1.3.min.js"></script>
 	<!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.min.js"></script>
-    <style>
-        .button {
-    background: none repeat scroll 0 0 transparent;
-    border: 0 none;
-    color: #666666;
-    cursor: pointer;
-    font-family: Georgia,Garamond,serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin: 0;
-}
-    </style>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/bootstrap.min.js"></script>
+	<style>
+		.button
+		{
+			background: none repeat scroll 0 0 transparent;
+			border: 0 none;
+			color: #666666;
+			cursor: pointer;
+			font-family: Georgia,Garamond,serif;
+			font-size: 16px;
+			letter-spacing: 1px;
+			margin: 0;
+		}
+	</style>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
 </head>
 <body>
 	<div id="header" class="container-fluid">
-  <a class="logo" href="/home.aspx">
-    <img src="/assets/img/yleana_logo.png" alt="Yleana" />
-  </a>
-</div>
-  <div id="content" class="container-fluid"><!-- container -->
-   <!-- navbar -->
-   <nav class="navbar navbar-default">
-      <div class="col-lg-12">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Who We Are</a></li>
-            <li><a href="#">SAT</a></li>
-            <li><a href="#">Cutting Edge Leadership</a></li>
-            <li><a href="#">College Preparedness</a></li>
-            <li><a href="#">Imagination Lectures</a></li>
-            <li><a href="#">2014</a></li>
-            <li><a href="/contactus.aspx">Contact Us</a></li>
-            <li><a href="/StudentRegistration.aspx">Apply</a></li>
-            <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
-             <ul class="dropdown-menu" role="menu">
-                <li><a href="/Login.aspx">Login</a></li>
-                <li><a href="/ChangePassword.aspx">Change Password</a></li>
-                <li><a href="/Logout.aspx">Logout</a></li>
-             </ul>
-          </li>
-         </ul>
-         </div><!--/.nav-collapse -->
-      </div>
-   </nav>
-   <!-- /navbar -->
-</div><!-- /container -->
-        <form id="form1"  class="form-inline" runat="server">
-            <telerik:RadScriptManager ID="RadScriptManager1" runat="server" />
-            <div class="container-fluid">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-                </asp:ContentPlaceHolder>
-            </div>
-        </form>
-   <div class="container-fluid">
-   <div id="footer">
-      <p style="text-align:center;">Copyright &copy; <%=DateTime.Today.Year %> <a href="http://www.yleana.org">Yleana.org</a> | All Rights Reserved | Powered by <a href="http://www.priworks.com" target="_blank">PRI</a></p>
-   </footer>
-</div><!-- /container -->
+		<!-- Donate -->
+		<div id="button-donate" class="Donate_1">
+			<input type="button" onmouseover="" onclick="Javascript: refresh_captchah_img();" class="button" id="Donate_b" value="" style="font-family:Georgia, Garamond, serif; height:35px; width:110px; margin-right:20px; margin-top:15px;">
+		</div>
+		<!-- /Donate -->
+		<a class="logo" href="/home.aspx">
+			<img src="/assets/img/yleana_logo.png" alt="Yleana" />
+		</a>
+	</div>
+	<div id="content" class="container-fluid">
+		<!-- container -->
+		<!-- navbar -->
+		<nav class="navbar navbar-default">
+			<div class="col-lg-12">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!--<div id="navbar" class="navbar-collapse collapse"> remove responsiveness -->
+				<div id="navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="http://yleana.org/yleana.php#Who_We_Are">Who We Are</a></li>
+						<li><a href="http://yleana.org/yleana.php#SAT">SAT</a></li>
+						<li><a href="http://yleana.org/yleana.php#Cutting_Edge_Leadership">Cutting Edge Leadership</a></li>
+						<li><a href="http://yleana.org/yleana.php#College_Preparedness">College Preparedness</a></li>
+						<li><a href="http://yleana.org/yleana.php#Imagination_Lectures">Imagination Lectures</a></li>
+						<li><a href="http://yleana.org/yleana.php#2014">2014</a></li>
+						<% if (!WebMatrix.WebData.WebSecurity.IsAuthenticated)
+		 { %>
+						<li><a href="/StudentRegistration.aspx">Apply</a></li>
+						<%} %>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<% if (!WebMatrix.WebData.WebSecurity.IsAuthenticated)
+		   { %>
+								<li><a href="/Login.aspx">Login</a></li>
+								<%}
+		   else
+		   { %>
+								<li><a href="/ChangePassword.aspx">Change Password</a></li>
+								<li><a href="/Logout.aspx">Logout</a></li>
+								<%} %>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+		<!-- /navbar -->
+	</div>
+	<!-- /container -->
+	<form id="form1" class="form-inline" runat="server">
+		<telerik:RadScriptManager ID="RadScriptManager1" runat="server" />
+		<div class="container-fluid">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+	</form>
+	<div id="container-footer" class="container-fluid">
+		<div id="footer">
+			<p style="text-align: center;">Copyright &copy; <%=DateTime.Today.Year %>	|	<a href="http://www.yleana.org">Yleana.org</a>	|	All Rights Reserved	|	Powered by <a href="http://www.priworks.com" target="_blank">PRI</a></p>
+		</div>
+	</div>
+	<!-- /container -->
 </body>
 </html>
